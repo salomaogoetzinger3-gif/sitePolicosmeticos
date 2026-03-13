@@ -19,8 +19,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Neulis", sans-serif;
-  background-color: var(--background-primary-color);
-  color: var(--background-sixnaria-color);
+  background-color: #8a315c;
+  color: #ffffff;
 }
 
 h2 {
