@@ -116,3 +116,33 @@
 #radio4:checked ~ .navegation-auto .auto-btn1 {
   background-color: var(--background-quinaria-color);
 }
+
+.titulo-produtos {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--background-primary-color);
+}
+
+.preco-produto {
+  width: 390px;
+  background-color: var(--background-sixnaria-color);
+  align-items: center;
+  margin: 0 auto;
+  gap: 20px;
+  border-radius: 5px;
+}
+
+.preco-anterior {
+  font-size: 15px;
+  color: gray;
+  font-family: "Neulis";
+}
+
+.preco-atual {
+  font-size: 30px;
+  color: red;
+}
+
+.parcela {
+  color: black;
+}
