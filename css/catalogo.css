@@ -40,6 +40,7 @@
   display: flex;
   width: 25%;
   position: relative;
+  transition: 2s;
 }
 
 .slide img {
@@ -81,4 +82,37 @@
 }
 #radio4:checked ~ .primeiro {
   margin-left: -75%;
+}
+
+.navegation-auto div {
+  border: 2px solid var(--background-primary-color);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navegation-auto {
+  position: absolute;
+  width: 370px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.navegation-auto div:not(:last-child) {
+  margin-right: 30px;
+}
+
+#radio1:checked ~ .navegation-auto .auto-btn1 {
+  background-color: var(--background-quinaria-color);
+}
+#radio2:checked ~ .navegation-auto .auto-btn1 {
+  background-color: var(--background-quinaria-color);
+}
+#radio3:checked ~ .navegation-auto .auto-btn1 {
+  background-color: var(--background-quinaria-color);
+}
+#radio4:checked ~ .navegation-auto .auto-btn1 {
+  background-color: var(--background-quinaria-color);
 }
