@@ -18,7 +18,8 @@
 body {
   margin: 0;
   padding: 0;
-background-color:var(--background-primary-color);
+  font-family: "Neulis", sans-serif;
+  background-color: var(--background-primary-color);
   color: var(--background-sixnaria-color);
 }
 
