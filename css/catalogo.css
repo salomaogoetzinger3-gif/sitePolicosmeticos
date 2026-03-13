@@ -1,12 +1,13 @@
 .catalogo {
   height: 600px;
-  background-color: var(--background-quinaria-color);
+  background-color: #ffd2e7;
   text-align: center;
   padding: 20px 0;
 }
 
 .title-section {
-  color: var(--background-primary-color);
+  font-family: "Neulis";
+  color: #8a315c;
 }
 
 .line {
