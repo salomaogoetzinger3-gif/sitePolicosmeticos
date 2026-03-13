@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/globalCss.css" />
+    <link rel="icon" href="./pressets/poli_logo_favico.png" />
+    <title>Poli Cosméticos</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="#">
+        <img
+          class="logo"
+          src="./pressets/poli_logo.png"
+          alt="Poli Cosméticos"
+        />
+      </a>
+      <div class="main-header-link">
+        <a class="nav-link" href="#">Entrar</a>
+        <a class="nav-link" href="#">Cadastrar-se</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-img">
+          <div class="text-hero">
+            <h2 class="title-hero">
+              Bem-vindo à<br />
+              Poli Cosméticos
+            </h2>
+            <p class="paragrafo-hero">
+              BELEZA, QUALIDADE E CUIDADO EM CADA DETALHE. PRODUTOS FEITOS PARA
+              VALORIZAR SUA BELEZA E REALÇAR SUA CONFIANÇA TODOS OS DIAS.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="catalogo">
+        <h2 class="title-section">Catálogo</h2>
+        <hr class="line" />
+
+        <div class="slider">
+          <div class="slides">
+            <!--Radio Buttons-->
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+            <!--Slides Img-->
+            <div class="slide primeiro">
+              <img src="./pressets/carrossel/01.jpeg" alt="Imagem natura" />
+              <img src="./pressets/carrossel/02.jpeg" alt="Imagem natura" />
+              <img src="./pressets/carrossel/03.jpeg" alt="Imagem natura" />
+              <img src="./pressets/carrossel/04.jpeg" alt="Imagem natura" />
+            </div>
+            <!--navegation auto-->
+            <div class="navegation-auto">
+              <div class="auto-btn" id="autoBtn1"></div>
+              <div class="auto-btn" id="autoBtn2"></div>
+              <div class="auto-btn" id="autoBtn3"></div>
+              <div class="auto-btn" id="autoBtn4"></div>
+            </div>
+          </div>
+          <div class="manual-navegation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img class="logo" src="./pressets/poli_logo.png" alt="Poli Cosméticos" />
+    </footer>
+  </body>
+</html>

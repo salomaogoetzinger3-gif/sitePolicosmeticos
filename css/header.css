@@ -1,0 +1,25 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-primary-color);
+  margin: 0;
+  padding: 0 10px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.main-header-link {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  font-family: "Carter One", system-ui;
+  color: var(--text-secundary-color);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}

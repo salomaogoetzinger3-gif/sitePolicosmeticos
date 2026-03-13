@@ -1,0 +1,44 @@
+@import url(./header.css);
+@import url(./reset.css);
+@import url(./hero.css);
+@import url(./footer.css);
+@import url(./catalogo.css);
+@font-face {
+  font-family: "Neulis";
+  src:
+    local("Neulis Regular"),
+    local("Neulis-Regular"),
+    url("Neulis-Regular.woff2") format("woff2"),
+    url("Neulis-Regular.woff") format("woff"),
+    url("Neulis-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--background-sixnaria-color);
+  background-color: var(--background-primary-color);
+}
+
+h2 {
+  margin: 0;
+  font-family: "Neulis";
+}
+
+p {
+  margin: 0;
+  font-family: "Neulis";
+}
+
+:root {
+  --background-primary-color: #8a315c;
+  --background-secondary-color: #c4388d;
+  --background-tertiary-color: #cc71a4;
+  --background-quaternary-color: #e6b3d9;
+  --background-quinaria-color: #ffd2e7;
+  --background-sixnaria-color: #ffffff;
+  --title-color: #efeecc;
+  --text-secundary-color: #d8c27a;
+}
