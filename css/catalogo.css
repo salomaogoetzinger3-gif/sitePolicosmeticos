@@ -1,6 +1,6 @@
 .catalogo {
   height: 100%;
-  background-color: #ffd2e7;
+  background-image: url("../pressets/background.jpeg");
   text-align: center;
   padding: 20px 0;
 }
