@@ -236,3 +236,15 @@
 .verMais {
   margin-top: 20px;
 }
+
+.btn-vermais {
+  font-size: 20px;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: var(--background-sixnaria-color);
+  background-color: var(--background-tertiary-color);
+  border: 2px solid var(--background-primary-color);
+  border-radius: 30px;
+  padding: 10px 20px;
+}
