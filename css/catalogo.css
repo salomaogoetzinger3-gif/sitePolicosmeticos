@@ -1,5 +1,5 @@
 .catalogo {
-  height: 600px;
+  height: 100%;
   background-color: #ffd2e7;
   text-align: center;
   padding: 20px 0;
@@ -107,29 +107,54 @@
 #radio1:checked ~ .navegation-auto .auto-btn1 {
   background-color: var(--background-quinaria-color);
 }
-#radio2:checked ~ .navegation-auto .auto-btn1 {
+#radio2:checked ~ .navegation-auto .auto-btn2 {
   background-color: var(--background-quinaria-color);
 }
-#radio3:checked ~ .navegation-auto .auto-btn1 {
+#radio3:checked ~ .navegation-auto .auto-btn3 {
   background-color: var(--background-quinaria-color);
 }
-#radio4:checked ~ .navegation-auto .auto-btn1 {
+#radio4:checked ~ .navegation-auto .auto-btn4 {
+  background-color: var(--background-quinaria-color);
+}
+
+#radio10:checked ~ .primeiro {
+  margin-left: 0%;
+}
+#radio11:checked ~ .primeiro {
+  margin-left: -35%;
+}
+#radio12:checked ~ .primeiro {
+  margin-left: -70%;
+}
+
+#radio10:checked ~ .navegation-auto .auto-btn10 {
+  background-color: var(--background-quinaria-color);
+}
+#radio11:checked ~ .navegation-auto .auto-btn11 {
+  background-color: var(--background-quinaria-color);
+}
+#radio12:checked ~ .navegation-auto .auto-btn12 {
   background-color: var(--background-quinaria-color);
 }
 
 .titulo-produtos {
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Montserrat", sans-serif;
   color: var(--background-primary-color);
 }
 
-.preco-produto {
-  width: 390px;
+.produtos {
+  width: 350px;
   background-color: var(--background-sixnaria-color);
   align-items: center;
-  margin: 0 auto;
-  gap: 20px;
   border-radius: 5px;
+  margin: 0 auto;
+  padding: 5px 0;
+  margin-top: 10px;
+}
+
+.preco-produto {
+  gap: 20px;
 }
 
 .preco-anterior {
@@ -145,4 +170,37 @@
 
 .parcela {
   color: black;
+}
+
+.opcoes-compra {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+.btn-comprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--background-sixnaria-color);
+  background-color: #8a315c;
+}
+
+.btn-adicionarCarrinho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--background-sixnaria-color);
+  background-color: #cc71a4;
 }
