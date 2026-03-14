@@ -10,5 +10,5 @@ function nextImage1() {
   if (count1 > 3) {
     count1 = 1;
   }
-  document.getElementById("radio" + count1).checked = true;
+  document.getElementById("radio" + (count1 + 4)).checked = true;
 }

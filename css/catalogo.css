@@ -104,36 +104,62 @@
   margin-right: 30px;
 }
 
-#radio1:checked ~ .navegation-auto .auto-btn1 {
+#radio1:checked ~ .navegation-auto .auto-btn {
   background-color: var(--background-quinaria-color);
 }
-#radio2:checked ~ .navegation-auto .auto-btn2 {
+#radio2:checked ~ .navegation-auto .auto-btn {
   background-color: var(--background-quinaria-color);
 }
-#radio3:checked ~ .navegation-auto .auto-btn3 {
+#radio3:checked ~ .navegation-auto .auto-btn {
   background-color: var(--background-quinaria-color);
 }
-#radio4:checked ~ .navegation-auto .auto-btn4 {
+#radio4:checked ~ .navegation-auto .auto-btn {
   background-color: var(--background-quinaria-color);
 }
 
-#radio10:checked ~ .primeiro {
+#radio5:checked ~ .primeiro {
   margin-left: 0%;
 }
-#radio11:checked ~ .primeiro {
-  margin-left: -35%;
+#radio6:checked ~ .primeiro {
+  margin-left: -34.5%;
 }
-#radio12:checked ~ .primeiro {
-  margin-left: -70%;
+#radio7:checked ~ .primeiro {
+  margin-left: -67%;
 }
 
+#radio5:checked ~ .navegation-auto .auto-btn {
+  background-color: var(--background-quinaria-color);
+}
+#radio6:checked ~ .navegation-auto .auto-btn {
+  background-color: var(--background-quinaria-color);
+}
+#radio7:checked ~ .navegation-auto .auto-btn {
+  background-color: var(--background-quinaria-color);
+}
+
+#radio8:checked ~ .primeiro {
+  margin-left: -5;
+}
+#radio9:checked ~ .primeiro {
+  margin-left: -25%;
+}
+#radio10:checked ~ .primeiro {
+  margin-left: -50%;
+}
+#radio11:checked ~ .primeiro {
+  margin-left: -75%;
+}
+
+#radio8:checked ~ .navegation-auto .auto-btn8 {
+  background-color: var(--background-quinaria-color);
+}
+#radio9:checked ~ .navegation-auto .auto-btn9 {
+  background-color: var(--background-quinaria-color);
+}
 #radio10:checked ~ .navegation-auto .auto-btn10 {
   background-color: var(--background-quinaria-color);
 }
 #radio11:checked ~ .navegation-auto .auto-btn11 {
-  background-color: var(--background-quinaria-color);
-}
-#radio12:checked ~ .navegation-auto .auto-btn12 {
   background-color: var(--background-quinaria-color);
 }
 
@@ -145,7 +171,7 @@
 
 .produtos {
   width: 350px;
-  background-color: var(--background-sixnaria-color);
+  background-color: var(--background-quaternary-color);
   align-items: center;
   border-radius: 5px;
   margin: 0 auto;
