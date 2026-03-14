@@ -107,13 +107,33 @@
 #radio1:checked ~ .navegation-auto .auto-btn1 {
   background-color: var(--background-quinaria-color);
 }
-#radio2:checked ~ .navegation-auto .auto-btn1 {
+#radio2:checked ~ .navegation-auto .auto-btn2 {
   background-color: var(--background-quinaria-color);
 }
-#radio3:checked ~ .navegation-auto .auto-btn1 {
+#radio3:checked ~ .navegation-auto .auto-btn3 {
   background-color: var(--background-quinaria-color);
 }
-#radio4:checked ~ .navegation-auto .auto-btn1 {
+#radio4:checked ~ .navegation-auto .auto-btn4 {
+  background-color: var(--background-quinaria-color);
+}
+
+#radio10:checked ~ .primeiro {
+  margin-left: 0%;
+}
+#radio11:checked ~ .primeiro {
+  margin-left: -35%;
+}
+#radio12:checked ~ .primeiro {
+  margin-left: -70%;
+}
+
+#radio10:checked ~ .navegation-auto .auto-btn10 {
+  background-color: var(--background-quinaria-color);
+}
+#radio11:checked ~ .navegation-auto .auto-btn11 {
+  background-color: var(--background-quinaria-color);
+}
+#radio12:checked ~ .navegation-auto .auto-btn12 {
   background-color: var(--background-quinaria-color);
 }
 
