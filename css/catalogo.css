@@ -1,8 +1,10 @@
 .catalogo {
   height: 100%;
   background-image: url("../pressets/background.jpeg");
+  background-size: cover;
   text-align: center;
   padding: 20px 0;
+  border: 5px solid var(--background-primary-color);
 }
 
 .title-section {
