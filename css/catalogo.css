@@ -171,8 +171,8 @@
 }
 
 .titulo-produtos {
-  font-size: 30px;
-  font-family: "Inter", sans-serif;
+  font-size: 23px;
+  font-family: "poppins", sans-serif;
   color: var(--background-primary-color);
   padding: 0 10px;
 }
@@ -182,7 +182,7 @@
   background-image: url("../pressets/background.jpeg");
   align-items: center;
   border-radius: 5px;
-  border: 1px solid var(--background-primary-color);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   padding: 5px 0;
   margin-top: 10px;
@@ -244,7 +244,7 @@
   align-items: center;
   padding: 10px 20px;
   border-radius: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: "poppins", sans-serif;
   font-weight: 700;
   text-decoration: none;
   color: var(--background-sixnaria-color);
@@ -257,7 +257,7 @@
   align-items: center;
   padding: 10px 20px;
   border-radius: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "poppins", sans-serif;
   font-weight: 700;
   text-decoration: none;
   color: var(--background-sixnaria-color);
