@@ -1,10 +1,15 @@
 .catalogo {
   height: 100%;
-  background: linear-gradient(to bottom, #e6b3d9, #ec4899);
+  background-image: url("../pressets/background.jpeg");
   background-size: contain;
   text-align: center;
   padding: 20px 0;
   border: 5px solid var(--background-primary-color);
+}
+
+.link-produto {
+  text-decoration: none;
+  color: var(--background-primary-color);
 }
 
 .title-section {
@@ -169,19 +174,29 @@
   font-size: 30px;
   font-family: "Inter", sans-serif;
   color: var(--background-primary-color);
+  padding: 0 10px;
 }
 
 .produtos {
   width: 350px;
-  background-color: var(--background-quaternary-color);
+  background-image: url("../pressets/background.jpeg");
   align-items: center;
   border-radius: 5px;
+  border: 1px solid var(--background-primary-color);
   margin: 0 auto;
   padding: 5px 0;
   margin-top: 10px;
 }
 
+.aligh-produtos {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
 .preco-produto {
+  display: table;
+  padding: 0 20px 0 40px;
   gap: 20px;
 }
 
@@ -189,6 +204,22 @@
   font-size: 15px;
   color: gray;
   font-family: "Neulis";
+}
+
+.estrelinhas {
+  font-size: 30px;
+  color: #8a315c;
+}
+
+.estrelinhas p {
+  font-size: 15px;
+  color: #8a315c;
+  font-family: "Neulis";
+}
+
+.estrelinhas a {
+  text-decoration: none;
+  color: #8a315c;
 }
 
 .preco-atual {
@@ -231,20 +262,4 @@
   text-decoration: none;
   color: var(--background-sixnaria-color);
   background-color: #cc71a4;
-}
-
-.verMais {
-  margin-top: 20px;
-}
-
-.btn-vermais {
-  font-size: 20px;
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-  color: var(--background-sixnaria-color);
-  background-color: var(--background-tertiary-color);
-  border: 2px solid var(--background-primary-color);
-  border-radius: 30px;
-  padding: 10px 20px;
 }
