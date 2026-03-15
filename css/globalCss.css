@@ -9,9 +9,9 @@
   src:
     local("Neulis Regular"),
     local("Neulis-Regular"),
-    url("Neulis-Regular.woff2") format("woff2"),
-    url("Neulis-Regular.woff") format("woff"),
-    url("Neulis-Regular.ttf") format("truetype");
+    url("../fonts/Neulis-Regular.woff2") format("woff2"),
+    url("../fonts/Neulis-Regular.woff") format("woff"),
+    url("../fonts/Neulis-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -21,6 +21,7 @@ body {
   padding: 0;
   background-color: #8a315c;
   color: #ffffff;
+  font-family: "Neulis";
 }
 
 h2 {
