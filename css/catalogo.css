@@ -1,6 +1,6 @@
 .catalogo {
   height: 100%;
-  background-image: url("../pressets/background.jpeg");
+  background: linear-gradient(to bottom, #e6b3d9, #ec4899);
   background-size: contain;
   text-align: center;
   padding: 20px 0;
@@ -167,7 +167,7 @@
 
 .titulo-produtos {
   font-size: 30px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--background-primary-color);
 }
 
@@ -213,7 +213,7 @@
   align-items: center;
   padding: 10px 20px;
   border-radius: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   text-decoration: none;
   color: var(--background-sixnaria-color);
