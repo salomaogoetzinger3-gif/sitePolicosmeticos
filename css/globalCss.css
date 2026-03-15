@@ -6,14 +6,7 @@
 @import url(./avaliacoes.css);
 @font-face {
   font-family: "Neulis";
-  src:
-    local("Neulis Regular"),
-    local("Neulis-Regular"),
-    url("../fonts/Neulis-Regular.woff2") format("woff2"),
-    url("../fonts/Neulis-Regular.woff") format("woff"),
-    url("../fonts/Neulis-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
+  src: url("../fonts/neulis-regular.ttf") format("truetype");
 }
 
 body {
