@@ -182,7 +182,7 @@
   background-image: url("../pressets/background.jpeg");
   align-items: center;
   border-radius: 5px;
-  border: 1px solid var(--background-primary-color);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   padding: 5px 0;
   margin-top: 10px;
