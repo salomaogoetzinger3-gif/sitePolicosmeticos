@@ -23,3 +23,44 @@
   font-size: 18px;
   font-weight: 500;
 }
+
+.buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.form-control {
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  font-family: "poppins", sans-serif;
+  background-color: #ffd2e7;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  background-color: #ffd2e7;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.input-field i {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  color: #404044;
+  padding-left: 15px;
+}
+
+#buscar {
+  width: 400px;
+  background-color: #ffd2e7;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 12px 30px;
+}
