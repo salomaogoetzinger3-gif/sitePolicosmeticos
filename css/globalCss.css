@@ -4,6 +4,7 @@
 @import url(./footer.css);
 @import url(./catalogo.css);
 @import url(./avaliacoes.css);
+@import url(./tabs.css);
 @font-face {
   font-family: "Neulis";
   src: url("../fonts/neulis-regular.ttf") format("truetype");

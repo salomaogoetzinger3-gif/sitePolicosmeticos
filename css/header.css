@@ -17,7 +17,8 @@
 }
 
 .nav-link {
-  font-family: "Carter One", system-ui;
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
   color: #d8c27a;
   text-decoration: none;
   font-size: 18px;
@@ -28,25 +29,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
 }
 
 .form-control {
   border: none;
   padding: 10px;
   width: 100%;
-  border-radius: 8px;
   font-family: "poppins", sans-serif;
   background-color: #ffd2e7;
+  margin-left: 20px;
 }
 
 .input-field {
   display: flex;
   align-items: center;
-  width: 400px;
+  width: 100%;
   background-color: #ffd2e7;
-  border-radius: 8px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
 }
 
 .input-field i {

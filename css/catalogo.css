@@ -1,10 +1,7 @@
 .catalogo {
   height: 100%;
-  background-image: url("../pressets/background.jpeg");
-  background-size: contain;
   text-align: center;
-  padding: 20px 0;
-  border: 5px solid var(--background-primary-color);
+  padding: 5px 0;
 }
 
 .link-produto {
@@ -178,7 +175,7 @@
 }
 
 .produtos {
-  width: 350px;
+  width: 100%;
   background-color: rgb(255, 255, 255);
   align-items: center;
   border-radius: 5px;
