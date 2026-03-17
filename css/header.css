@@ -58,6 +58,7 @@
   font-family: "poppins", sans-serif;
   background-color: #ffd2e7;
   margin-left: 20px;
+  border-radius: 8px;
 }
 
 .input-field {
@@ -91,6 +92,11 @@
     display: block;
     width: 100%;
   }
+
+  .buscador {
+    width: 430px;
+  }
+
   .main-header {
     display: flex;
     align-items: center;
