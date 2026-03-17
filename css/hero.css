@@ -1,18 +1,26 @@
-.hero .hero-img {
-  height: 460px;
+.hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+.back-video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  background: url(../pressets/hero-poli1.jpeg) no-repeat;
-  background-size: cover;
-  background-position: right;
+  height: 100%;
+  object-fit: cover;
 }
 
-.hero .text-hero {
-  padding-top: 240px;
+.text-hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
   text-align: center;
-}
-
-.hero .text-hero h2 {
-  margin-bottom: 10px;
+  width: 90%;
 }
 
 .hero .title-hero {
@@ -25,13 +33,13 @@
   font-size: 14px;
 }
 
-@media screen and (min-width: 1024px) {
-  .hero .hero-img {
-    height: 680px;
-    background-size: cover;
-    background-position: 0 -70px;
+@media screen and (min-width: 768px) {
+  .text-hero {
+    top: 150px;
   }
-  .hero h2 {
-    font-size: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .text-hero {
+    top: 220px;
   }
 }

@@ -2,6 +2,7 @@
   height: 100%;
   text-align: center;
   padding: 5px 0;
+  background-color: #ffd2e7;
 }
 
 .link-produto {
@@ -12,6 +13,7 @@
 .title-section {
   font-family: "Neulis";
   color: #8a315c;
+  margin-top: 20px;
 }
 
 .line {
