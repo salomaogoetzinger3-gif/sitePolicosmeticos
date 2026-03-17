@@ -23,6 +23,23 @@
   width: 90%;
 }
 
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.nav-link {
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid white;
+  color: white;
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .hero .title-hero {
   font-size: 30px;
 }
@@ -33,6 +50,32 @@
   font-size: 14px;
 }
 
+.menu-lateral {
+  padding: 1.5rem;
+}
+
+.btn-expandir {
+  font-size: 20px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.open {
+  display: block;
+}
+
+.menu-lateral ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.item-menu {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .text-hero {
     top: 150px;
@@ -41,5 +84,8 @@
 @media screen and (min-width: 1024px) {
   .text-hero {
     top: 220px;
+  }
+  .menu-lateral {
+    display: none;
   }
 }
