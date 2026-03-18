@@ -1,8 +1,8 @@
 function menuShow(){
-    let menuMobile = document.querySelector('.menu-mobile'); // corrigido
-    if(menuMobile.classList.contains('open')) {
+    let menuMobile = document.querySelector('.mobile-menu');
+    if(menuMobile.classList.contains('open')){
         menuMobile.classList.remove('open');
-    } else {
-        menuMobile.classList.add('open');
+    } else{
+        menuMobile.classList.add('open')
     }
 }

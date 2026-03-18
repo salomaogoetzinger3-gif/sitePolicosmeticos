@@ -22,60 +22,91 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="aligh-header">
-        <a href="#">
+      <nav class="nav-bar">
+        <div class="logo">
           <img
-            class="logo"
+            class="logo-foto"
             src="./pressets/poli_logo.png"
-            alt="Poli Cosméticos"
+            alt="poli-logo"
           />
-        </a>
-        <nav class="menu-lateral">
-          <button onclick="menuShow()" class="btn-expandir">
-            <i class="fa-solid fa-bars"></i>
-          </button>
+        </div>
+        <div class="buscador-container">
+          <div class="buscador">
+            <div class="input-field">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                class="form-control"
+                placeholder="O que você está procurando?"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="nav-list">
           <ul>
-            <li class="item-menu">
-              <a href="#">
-                <span class="icon"><i class="fa-regular fa-house"></i></span>
-                <span class="txt-link">Home</span>
-              </a>
+            <li class="nav-item">
+              <a href="#" class="nav-link1"
+                ><i class="fa-regular fa-house"></i>Home</a
+              >
             </li>
-            <li class="item-menu">
-              <a href="#">
-                <span class="icon"
-                  ><i class="fa-solid fa-bag-shopping"></i
-                ></span>
-                <span class="txt-link">Suas Compras</span>
-              </a>
+            <li class="nav-item">
+              <a href="#" class="nav-link1"
+                ><i class="fa-solid fa-bag-shopping"></i>Suas Compras</a
+              >
             </li>
-            <li class="item-menu">
-              <a href="#">
-                <span class="icon"
-                  ><i class="fa-solid fa-cart-arrow-down"></i
-                ></span>
-                <span class="txt-link">Carrinho</span>
-              </a>
+            <li class="nav-item">
+              <a href="#" class="nav-link1"
+                ><i class="fa-solid fa-cart-arrow-down"></i>Carrinho</a
+              >
             </li>
-            <li class="item-menu">
-              <a href="#">
-                <span class="icon"><i class="fa-solid fa-book"></i></span>
-                <span class="txt-link">Sobre nós</span>
-              </a>
+            <li class="nav-item">
+              <a href="#" class="nav-link1"
+                ><i class="fa-solid fa-book"></i>Sobre nós</a
+              >
             </li>
-            <li class="item-menu">
-              <a href="#">
-                <span class="icon"
-                  ><i class="fa-regular fa-circle-user"></i
-                ></span>
-                <span class="txt-link">Conta</span>
-              </a>
+            <li class="nav-item">
+              <a href="#" class="nav-link1"
+                ><i class="fa-regular fa-circle-user"></i>Conta</a
+              >
             </li>
           </ul>
-          <script src="./javascript/nav-bar.js"></script>
-        </nav>
+        </div>
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item">
+            <a href="#" class="nav-link1"
+              ><i class="fa-regular fa-house"></i>Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link1"
+              ><i class="fa-solid fa-bag-shopping"></i>Suas Compras</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link1"
+              ><i class="fa-solid fa-cart-arrow-down"></i>Carrinho</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link1"
+              ><i class="fa-solid fa-book"></i>Sobre nós</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link1"
+              ><i class="fa-regular fa-circle-user"></i>Conta</a
+            >
+          </li>
+        </ul>
       </div>
-      <div class="buscador-container">
+      <div class="buscador-container1">
         <div class="buscador">
           <div class="input-field">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -90,6 +121,7 @@
         </div>
       </div>
     </header>
+    <script src="./javascript/nav-bar.js"></script>
     <main>
       <section class="catalogo">
         <div class="catalogo-container">
