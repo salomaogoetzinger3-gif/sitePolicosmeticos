@@ -1,6 +1,60 @@
+.categorias {
+  background-color: #ffd2e7;
+}
+
 .title-categorias {
   margin: 10px 0;
   font-size: 20px;
   font-family: "poppins", sans-serif;
   color: #8a315c;
+}
+
+.align-cards {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.img-card {
+  display: flex;
+  width: 250px;
+  height: 280px;
+}
+
+.card {
+  list-style: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .img-card {
+    height: auto;
+    padding: 10px;
+    background-color: #e6b3d9;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  .card {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .card h3 {
+    font-size: clamp(10px, 2.5vw, 25px);
+    padding: 5px;
+    text-align: center;
+    color: #8a315c;
+  }
+
+  .align-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    justify-content: center;
+    gap: 10px;
+    margin: 0 10px;
+  }
 }
