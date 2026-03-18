@@ -1,8 +1,8 @@
 function menuShow(){
-    let menuMobile = document.querySelector('.btn-expandir');
-    if(menuMobile.classList.contains('open')) {
+    let menuMobile = document.querySelector('.mobile-menu');
+    if(menuMobile.classList.contains('open')){
         menuMobile.classList.remove('open');
-    } else {
+    } else{
         menuMobile.classList.add('open')
     }
 }
