@@ -27,14 +27,6 @@
   object-fit: cover;
 }
 
-.manual-navegation {
-  position: absolute;
-  width: 370px;
-  margin-top: 360px;
-  display: flex;
-  justify-content: center;
-}
-
 .manual-btn {
   border: 2px solid var(--background-primary-color);
   padding: 5px;
