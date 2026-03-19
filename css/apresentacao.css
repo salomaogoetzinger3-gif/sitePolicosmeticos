@@ -1,0 +1,126 @@
+.slides {
+  display: flex;
+  width: 400%;
+  height: 100%;
+}
+
+.slider {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  display: flex;
+  position: relative;
+  transition: 2s;
+  width: 25%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.manual-navegation {
+  position: absolute;
+  width: 370px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid var(--background-primary-color);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 30px;
+}
+
+.manual-btn:hover {
+  background-color: var(--background-quinaria-color);
+}
+
+#radio1:checked ~ .primeiro {
+  margin-left: 0;
+}
+#radio2:checked ~ .primeiro {
+  margin-left: -25%;
+}
+#radio3:checked ~ .primeiro {
+  margin-left: -50%;
+}
+#radio4:checked ~ .primeiro {
+  margin-left: -75%;
+}
+
+.line {
+  width: 60px;
+  height: 1px;
+  background-color: var(--background-primary-color);
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.apresentacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-apresentacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  color: #8a315c;
+  width: 70%;
+  height: 400px;
+  margin-top: clamp(10px, 2.5vw, 25px);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.apresentacao-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  padding: 20px;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.apresentacao-title {
+  font-size: clamp(25px, 4vw, 30px);
+}
+
+.apresentacao-texto {
+  font-family: "poppins", sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider {
+    width: 100%;
+  }
+  .align-apresentacao {
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+  }
+
+  .apresentacao-conteudo {
+    width: 100%;
+  }
+}
