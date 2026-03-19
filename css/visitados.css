@@ -1,5 +1,11 @@
 .align-visitados {
   margin-top: 30px;
+  background-color: #fff;
+}
+
+.align-visitados h2 {
+  color: #8a315c;
+  padding: 10px;
 }
 
 .lista-visitados {
@@ -8,10 +14,8 @@
   align-items: center;
   gap: 10px;
   list-style: none;
-  margin: 0 3vw;
   background-color: #fff;
   padding: 20px;
-  border-radius: 8px;
 }
 
 .itens-visitados {
@@ -44,5 +48,6 @@
     justify-content: center;
     gap: 10px;
     margin: 0 10px;
+    border-radius: 8px;
   }
 }
