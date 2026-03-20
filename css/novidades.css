@@ -1,0 +1,82 @@
+.novidades {
+  background-color: #c4388d;
+  width: 100%;
+  height: 100%;
+}
+
+.align-novidades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vh;
+  padding-left: 8vh;
+}
+
+.video-whatsapp {
+  aspect-ratio: 4/4;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.novidades-texto {
+  margin: 5vw 10vh;
+}
+
+.novidades-texto h2 {
+  font-size: clamp(25px, 5vh, 40px);
+  margin-bottom: 3vh;
+}
+.novidades-texto p {
+  font-family: "poppins", sans-serif;
+  font-size: clamp(10px, 3.5vh, 30px);
+  margin-bottom: 8vh;
+}
+
+.btn-novidades {
+  padding: 20px;
+  border-radius: 30px;
+  font-size: clamp(15px, 2vh, 30px);
+  cursor: pointer;
+  text-decoration: none;
+  color: #8a315c;
+  background-color: #fff;
+}
+
+.btn-novidades:hover {
+  background-color: #8a315c;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .align-novidades {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .video-whatsapp {
+    width: 100%;
+  }
+
+  .novidades-video {
+    margin-top: 3vh;
+    padding: 0 2vh;
+  }
+
+  .novidades-texto {
+    margin: 0;
+  }
+
+  .novidades-texto h2 {
+    font-size: clamp(25px, 3vh, 40px);
+    margin-top: 15px;
+  }
+  .novidades-texto p {
+    font-size: clamp(10px, 2vh, 30px);
+    margin-bottom: 3vh;
+  }
+
+  .btn-novidades {
+    font-size: clamp(15px, 2vh, 40px);
+  }
+}

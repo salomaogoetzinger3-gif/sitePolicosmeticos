@@ -59,8 +59,8 @@
 }
 
 .line {
-  width: 60px;
-  height: 1px;
+  width: 10vh;
+  height: 5px;
   background-color: var(--background-primary-color);
   border-radius: 20px;
   margin: 0 auto;
