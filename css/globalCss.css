@@ -7,6 +7,7 @@
 @import url(./tabs.css);
 @import url(./apresentacao.css);
 @import url(./visitados.css);
+@import url(./novidades.css);
 @font-face {
   font-family: "Neulis";
   src: url("../fonts/neulis-regular.ttf") format("truetype");
