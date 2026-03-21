@@ -40,6 +40,10 @@
   font-size: clamp(12px, 1.5vw, 16px);
 }
 
+.align-icon {
+  display: none;
+}
+
 .mobile-menu-icon {
   display: none;
 }
@@ -117,8 +121,8 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    color: #fff;
-    font-size: 25px;
+    color: #d8c27a;
+    font-size: 28px;
   }
 
   .mobile-menu ul {
@@ -142,5 +146,26 @@
   }
   .buscador-container1 {
     display: block;
+  }
+
+  .align-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    font-size: 26px;
+  }
+
+  .align-icon li {
+    list-style: none;
+  }
+  .align-icon ul {
+    display: flex;
+    gap: 2vh;
+  }
+
+  .align-icon a {
+    text-decoration: none;
+    color: #d8c27a;
   }
 }
