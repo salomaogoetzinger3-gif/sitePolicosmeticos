@@ -1,6 +1,8 @@
 .align-visitados {
   margin-top: 30px;
   background-color: #fff;
+  overflow: hidden;
+  padding-bottom: 80px;
 }
 
 .align-visitados h2 {

@@ -106,7 +106,7 @@
 }
 
 .apresentacao-texto1 {
-  color: #fff;
+  color: #000000;
   font-family: "poppins", sans-serif;
 }
 
@@ -132,10 +132,10 @@
 }
 
 .apresentacao-itens {
-  color: #fff;
+  color: #000;
   width: 100%;
   height: 100%;
-  background-color: #8a315c;
+  background-color: #f1f1f1;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -143,10 +143,10 @@
   gap: 5px;
 }
 .apresentacao-destaque {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 200px));
   align-items: center;
-  gap: 50px;
+  gap: 10px;
 }
 
 .marca-foto:hover {
@@ -193,5 +193,21 @@
 
   .apresentacao-destaque {
     gap: 10px;
+    grid-template-columns: repeat(2, minmax(100px, 200px));
+  }
+
+  .nav {
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-link12 {
+    padding: 20px 20px;
+    width: 90%;
+  }
+  .nav-link {
+    padding: 20px 20px;
+    width: 90%;
   }
 }

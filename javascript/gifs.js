@@ -1,15 +1,14 @@
-const imagens = document.querySelectorAll('.gif');
+const cards = document.querySelectorAll('.link-visitados');
 
-imagens.forEach(img => {
-  img.addEventListener('click', () => {
+cards.forEach(card => {
+  const img = card.querySelector('img');
 
-    if (img.classList.contains('ativo')) {
-      img.src = img.dataset.png;
-      img.classList.remove('ativo');
-    } else {
-      img.src = img.dataset.gif;
-      img.classList.add('ativo');
-    }
+  card.addEventListener('mouseenter', () => {
+    img.src = img.dataset.gif;
+  });
 
+  card.addEventListener('mouseleave', () => {
+    img.src = img.dataset.png;
   });
 });
+

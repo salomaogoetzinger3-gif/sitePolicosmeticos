@@ -12,6 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shield"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -128,12 +132,10 @@
                   <h2 class="title-hero">Bem-vindo à<br />Poli Cosméticos</h2>
                   <p class="subtitle-hero">A beleza que você merece</p>
                   <div class="nav">
-                    <a class="nav-link" href="./formulario/entrar.html"
-                      >Entrar</a
+                    <a class="nav-link12" href="#visitados"
+                      >Explore nossos produtos</a
                     >
-                    <a class="nav-link" href="./formulario/formulario.html"
-                      >Cadastrar-se</a
-                    >
+                    <a class="nav-link" href="#novidades">Grupo VIP Whatsapp</a>
                   </div>
                 </div>
               </section>
@@ -200,12 +202,16 @@
                         <p class="apresentacao-texto1">Qualidade</p>
                       </li>
                       <li class="apresentacao-itens">
-                        <i class="fa-solid fa-shield"></i>
+                        <span class="material-symbols-outlined"> shield </span>
                         <p class="apresentacao-texto1">Garantia</p>
                       </li>
                       <li class="apresentacao-itens">
                         <i class="fa-regular fa-handshake"></i>
                         <p class="apresentacao-texto1">Confiança</p>
+                      </li>
+                      <li class="apresentacao-itens">
+                        <i class="fa-solid fa-angles-right"></i>
+                        <p class="apresentacao-texto1">Eficiência</p>
                       </li>
                     </ul>
                   </div>
@@ -253,7 +259,7 @@
                   </div>
                 </div>
               </section>
-              <section class="visitados animar">
+              <section class="visitados animar" id="visitados">
                 <div class="align-visitados">
                   <p class="visitados-texto">CATEGORIAS</p>
                   <h2 class="visitados-titulo">
@@ -356,8 +362,8 @@
                         <img
                           class="gif"
                           src="./pressets/gifs/xicara-cafe.png"
-                          data-png="./pressets/gifs/xicara-de-cafe.gif"
-                          data-gif="./pressets/gifs/xicara-cafe.gif"
+                          data-png="./pressets/gifs/xicara-cafe.png"
+                          data-gif="./pressets/gifs/xicara-de-cafe.gif"
                           alt="gif-xicara"
                           id="imagem"
                         />
@@ -368,7 +374,7 @@
                   <script src="./javascript/gifs.js"></script>
                 </div>
               </section>
-              <section class="novidades animar">
+              <section class="novidades animar" id="novidades">
                 <div class="align-novidades">
                   <div class="novidades-video">
                     <video
@@ -397,6 +403,7 @@
                   </div>
                 </div>
               </section>
+              <script src="./javascript/scroll.js"></script>
             </div>
             <div class="content" id="cabelos"></div>
             <div class="content" id="rosto">
@@ -404,7 +411,7 @@
                 <h2 class="title-categorias">Ofertas desse mês</h2>
                 <div class="cards-categorias">
                   <ul class="align-cards">
-                    <li class="card">
+                    <li class="card" id="presentes">
                       <img
                         class="img-card"
                         src="./pressets/cards/01.jpeg"
