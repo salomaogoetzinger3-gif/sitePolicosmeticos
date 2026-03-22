@@ -23,6 +23,22 @@
   width: 90%;
 }
 
+.title-hero1 {
+  font-size: 40px;
+}
+
+.aligh-texto1 {
+  width: 100%;
+}
+
+.cosmetico-texto {
+  font-weight: 600;
+}
+
+.hero-img {
+  width: 100px;
+}
+
 .nav {
   display: flex;
   justify-content: center;
@@ -42,6 +58,7 @@
 }
 
 .hero .title-hero {
+  font-family: "Neulis";
   font-size: 30px;
 }
 

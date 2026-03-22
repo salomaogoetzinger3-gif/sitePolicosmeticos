@@ -35,6 +35,17 @@ p {
   font-family: "Neulis";
 }
 
+.animar {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s ease;
+}
+
+.animar.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 :root {
   --background-primary-color: #8a315c;
   --background-secondary-color: #c4388d;
