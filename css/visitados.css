@@ -83,7 +83,7 @@
 @media screen and (max-width: 1024px) {
   .lista-visitados {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    grid-template-columns: repeat(2, minmax(200px, 250px));
     justify-content: center;
     gap: 10px;
     margin: 0 10px;
