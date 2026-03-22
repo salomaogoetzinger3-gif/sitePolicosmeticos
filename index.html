@@ -30,20 +30,6 @@
             alt="poli-logo"
           />
         </div>
-        <div class="buscador-container">
-          <div class="buscador">
-            <div class="input-field">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <input
-                type="search"
-                name="search"
-                id="search"
-                class="form-control"
-                placeholder="O que você está procurando?"
-              />
-            </div>
-          </div>
-        </div>
         <div class="nav-list">
           <ul>
             <li class="nav-item">
@@ -128,6 +114,7 @@
           </div>
         </div>
       </div>
+      <script src="./javascript/nav-bar.js"></script>
     </header>
     <script src="./javascript/nav-bar.js"></script>
     <main>
@@ -143,7 +130,7 @@
           </div>
           <div class="tab-contents">
             <div class="content show" id="todos">
-              <section class="hero">
+              <section class="hero animar">
                 <video
                   class="back-video"
                   autoplay
@@ -164,8 +151,9 @@
                   </div>
                 </div>
               </section>
-              <section class="marcas">
+              <section class="marcas animar">
                 <div class="align-marcas">
+                  <p class="marca-text">MARCAS PARCEIRAS</p>
                   <ul class="lista-marcas">
                     <li class="marca-li">
                       <a href="#" class="link-marca">
@@ -206,7 +194,7 @@
                   </ul>
                 </div>
               </section>
-              <section class="apresentacao">
+              <section class="apresentacao animar">
                 <div class="align-apresentacao">
                   <div class="apresentacao-conteudo">
                     <h2 class="apresentacao-title">
@@ -223,15 +211,15 @@
                     <ul class="apresentacao-destaque">
                       <li class="apresentacao-itens">
                         <i class="fa-regular fa-heart"></i>
-                        <p class="apresentacao-texto">Qualidade</p>
+                        <p class="apresentacao-texto1">Qualidade</p>
                       </li>
                       <li class="apresentacao-itens">
                         <i class="fa-solid fa-shield"></i>
-                        <p class="apresentacao-texto">Garantia</p>
+                        <p class="apresentacao-texto1">Garantia</p>
                       </li>
                       <li class="apresentacao-itens">
                         <i class="fa-regular fa-handshake"></i>
-                        <p class="apresentacao-texto">Confiança</p>
+                        <p class="apresentacao-texto1">Confiança</p>
                       </li>
                     </ul>
                   </div>
@@ -279,116 +267,122 @@
                   </div>
                 </div>
               </section>
-              <section class="visitados">
+              <section class="visitados animar">
                 <div class="align-visitados">
-                  <h2>Explore</h2>
-                  <hr class="line" />
+                  <p class="visitados-texto">CATEGORIAS</p>
+                  <h2 class="visitados-titulo">
+                    EXPLORE NOSSOS <strong>PRODUTOS</strong>
+                  </h2>
                   <ul class="lista-visitados">
                     <li class="itens-visitados">
-                      <img
-                        class="gif"
-                        src="./pressets/gifs/perfume.png"
-                        data-png="./pressets/gifs/perfume.png"
-                        data-gif="./pressets/gifs/perfume.gif"
-                        alt="gif-perfume"
-                        id="imagem"
-                      />
-                      <button class="btn-visitados" id="perfume">
-                        Perfume
-                      </button>
+                      <a href="#" class="link-visitados">
+                        <img
+                          class="gif"
+                          src="./pressets/gifs/perfume.png"
+                          data-png="./pressets/gifs/perfume.png"
+                          data-gif="./pressets/gifs/perfume.gif"
+                          alt="gif-perfume"
+                          id="imagem"
+                        />
+                        PERFUME
+                      </a>
                     </li>
                     <li class="itens-visitados">
-                      <img
-                        class="gif"
-                        src="./pressets/gifs/creme-e-tubo.png"
-                        data-png="./pressets/gifs/creme-e-tubo.png"
-                        data-gif="./pressets/gifs/creme-e-tubo.gif"
-                        alt="gif-creme"
-                        id="imagem"
-                      />
-                      <button class="btn-visitados" id="creme">
-                        Hidratantes
-                      </button>
+                      <a href="#" class="link-visitados">
+                        <img
+                          class="gif"
+                          src="./pressets/gifs/creme-e-tubo.png"
+                          data-png="./pressets/gifs/creme-e-tubo.png"
+                          data-gif="./pressets/gifs/creme-e-tubo.gif"
+                          alt="gif-creme"
+                          id="imagem"
+                        />
+                        HIDRATANTES
+                      </a>
                     </li>
                     <li class="itens-visitados">
-                      <img
-                        class="gif"
-                        src="./pressets/gifs/sabonete.png"
-                        data-png="./pressets/gifs/sabonete.png"
-                        data-gif="./pressets/gifs/sabonete.gif"
-                        alt="gif-sabonete"
-                        id="imagem"
-                      />
-                      <button class="btn-visitados" id="sabonete">
-                        Sabonete
-                      </button>
+                      <a href="#" class="link-visitados">
+                        <img
+                          class="gif"
+                          src="./pressets/gifs/sabonete.png"
+                          data-png="./pressets/gifs/sabonete.png"
+                          data-gif="./pressets/gifs/sabonete.gif"
+                          alt="gif-sabonete"
+                          id="imagem"
+                        />
+                        SABONETES
+                      </a>
                     </li>
                     <li class="itens-visitados">
-                      <img
-                        class="gif"
-                        src="./pressets/gifs/joia.png"
-                        data-png="./pressets/gifs/joia.png"
-                        data-gif="./pressets/gifs/joia.gif"
-                        alt="gif-joias"
-                        id="joias"
-                      />
-                      <button class="btn-visitados" id="joias">joias</button>
+                      <a href="#" class="link-visitados">
+                        <img
+                          class="gif"
+                          src="./pressets/gifs/joia.png"
+                          data-png="./pressets/gifs/joia.png"
+                          data-gif="./pressets/gifs/joia.gif"
+                          alt="gif-joias"
+                          id="joias"
+                        />
+                        PEDRARIAS
+                      </a>
                     </li>
                     <li class="itens-visitados">
-                      <img
-                        class="gif"
-                        src="./pressets/gifs/corar.png"
-                        data-png="./pressets/gifs/corar.png"
-                        data-gif="./pressets/gifs/corar.gif"
-                        alt="gif-corar"
-                        id="imagem"
-                      />
-                      <button class="btn-visitados" id="maquiagem">
-                        Maquiagem
-                      </button>
+                      <a href="#" class="link-visitados">
+                        <img
+                          class="gif"
+                          src="./pressets/gifs/corar.png"
+                          data-png="./pressets/gifs/corar.png"
+                          data-gif="./pressets/gifs/corar.gif"
+                          alt="gif-corar"
+                          id="imagem"
+                        />
+                        MAQUIAGEM
+                      </a>
                     </li>
                     <li class="itens-visitados">
-                      <img
-                        class="gif"
-                        src="./pressets/gifs/protetor-solar.png"
-                        data-png="./pressets/gifs/protetor-solar.png"
-                        data-gif="./pressets/gifs/protetor-solar.gif"
-                        alt="gif-protetor-solar"
-                        id="imagem"
-                      />
-                      <button class="btn-visitados" id="protetor-solar">
-                        Protetor Solar
-                      </button>
+                      <a href="#" class="link-visitados">
+                        <img
+                          class="gif"
+                          src="./pressets/gifs/protetor-solar.png"
+                          data-png="./pressets/gifs/protetor-solar.png"
+                          data-gif="./pressets/gifs/protetor-solar.gif"
+                          alt="gif-protetor-solar"
+                          id="imagem"
+                        />
+                        PROTETOR SOLAR
+                      </a>
                     </li>
                     <li class="itens-visitados">
-                      <img
-                        class="gif"
-                        src="./pressets/gifs/desodorante.png"
-                        data-png="./pressets/gifs/desodorante.png"
-                        data-gif="./pressets/gifs/desodorante.gif"
-                        alt="gif-desodorante"
-                        id="imagem"
-                      />
-                      <button class="btn-visitados" id="desodorante">
-                        Desodorante
-                      </button>
+                      <a href="#" class="link-visitados">
+                        <img
+                          class="gif"
+                          src="./pressets/gifs/desodorante.png"
+                          data-png="./pressets/gifs/desodorante.png"
+                          data-gif="./pressets/gifs/desodorante.gif"
+                          alt="gif-desodorante"
+                          id="imagem"
+                        />
+                        DESODORANTE
+                      </a>
                     </li>
                     <li class="itens-visitados">
-                      <img
-                        class="gif"
-                        src="./pressets/gifs/xicara-cafe.png"
-                        data-png="./pressets/gifs/xicara-de-cafe.gif"
-                        data-gif="./pressets/gifs/xicara-cafe.gif"
-                        alt="gif-xicara"
-                        id="imagem"
-                      />
-                      <button class="btn-visitados" id="caneca">Canécas</button>
+                      <a href="#" class="link-visitados">
+                        <img
+                          class="gif"
+                          src="./pressets/gifs/xicara-cafe.png"
+                          data-png="./pressets/gifs/xicara-de-cafe.gif"
+                          data-gif="./pressets/gifs/xicara-cafe.gif"
+                          alt="gif-xicara"
+                          id="imagem"
+                        />
+                        CANÉCAS
+                      </a>
                     </li>
                   </ul>
                   <script src="./javascript/gifs.js"></script>
                 </div>
               </section>
-              <section class="novidades">
+              <section class="novidades animar">
                 <div class="align-novidades">
                   <div class="novidades-video">
                     <video
@@ -477,6 +471,7 @@
         </div>
         <script src="./javascript/tabs.js"></script>
       </section>
+      <script src="./javascript/animar.js"></script>
     </main>
   </body>
 </html>
