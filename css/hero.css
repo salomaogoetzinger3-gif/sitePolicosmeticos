@@ -48,12 +48,33 @@
 
 .nav-link {
   border-radius: 20px;
-  padding: 10px;
+  padding: 20px 30px;
   border: 1px solid white;
   color: white;
   font-family: "poppins", sans-serif;
-  font-weight: 700;
   text-decoration: none;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  transform: translateY(-5px);
+}
+
+.nav-link12 {
+  color: #000;
+  text-decoration: none;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  font-family: "poppins", sans-serif;
+  transition: 0.3s;
+}
+.nav-link12:hover {
+  transform: translateY(-5px);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
