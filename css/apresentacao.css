@@ -159,6 +159,7 @@
   color: #0000009a;
   padding-top: 20px;
   letter-spacing: 1.5px;
+  font-size: clamp(10px, 1.5vh, 20px);
 }
 
 @media screen and (max-width: 1024px) {
