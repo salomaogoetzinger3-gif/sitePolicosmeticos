@@ -1,12 +1,21 @@
 .presentes {
-  background-color: #ffd2e7;
+  background-color: #fff;
+  margin-top: 30px;
 }
 
 .title-categorias {
-  margin: 10px 0;
-  font-size: 20px;
+  color: #000;
   font-family: "poppins", sans-serif;
-  color: #8a315c;
+  font-size: clamp(20px, 2.5vw, 50px);
+  font-weight: 400;
+  padding: 10px 0 20px;
+}
+.title-categorias strong {
+  color: #c4388d;
+  font-weight: 700;
+  font-family: "Playfair", serif;
+  font-style: italic;
+  font-size: clamp(30px, 3vw, 50px);
 }
 
 .align-cards {
@@ -35,7 +44,7 @@
 }
 
 .card h3 {
-  font-size: clamp(10px, 2.5vw, 25px);
+  font-size: clamp(10px, 2.5vw, 20px);
   padding: 5px;
   text-align: center;
   color: #8a315c;
