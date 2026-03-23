@@ -99,6 +99,12 @@
 .apresentacao-title {
   font-size: clamp(25px, 4vw, 30px);
 }
+.apresentacao-title strong {
+  color: #c4388d;
+  font-family: "Playfair", serif;
+  font-style: italic;
+  font-size: clamp(40px, 4vw, 43px);
+}
 
 .apresentacao-texto {
   font-family: "poppins", sans-serif;

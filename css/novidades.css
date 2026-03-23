@@ -26,9 +26,25 @@
   font-size: clamp(16px, 7vw, 45px);
   color: #d8c27a;
 }
+.novidade-titulo strong {
+  font-size: clamp(16px, 8vw, 55px);
+  color: #d8c27a;
+  font-family: "Playfair", serif;
+  font-style: italic;
+}
 .novidade-titulo1 {
   font-size: clamp(16px, 1.3rem, 1.6rem);
   color: #d8c27a;
+}
+.novidade-titulo1 strong {
+  font-size: clamp(16px, 1.8rem, 2rem);
+  color: #d8c27a;
+  font-family: "Playfair", serif;
+  font-style: italic;
+}
+
+.redes-sociais-texto p {
+  font-family: "poppins", sans-serif;
 }
 
 .novidade-texto {

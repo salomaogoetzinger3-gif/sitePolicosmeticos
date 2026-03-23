@@ -1,5 +1,5 @@
 .align-visitados {
-  margin-top: 30px;
+  padding-top: 5vw;
   background-color: #fff;
   overflow: hidden;
   padding-bottom: 80px;
@@ -33,9 +33,11 @@
   color: #0000009a;
 }
 .visitados-titulo strong {
-  color: #000;
+  color: #c4388d;
   font-weight: 700;
-  font-family: "Neulis", sans-serif;
+  font-family: "Playfair", serif;
+  font-style: italic;
+  font-size: clamp(30px, 3vw, 50px);
 }
 
 .link-visitados {
