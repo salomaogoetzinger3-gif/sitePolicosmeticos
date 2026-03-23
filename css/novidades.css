@@ -23,7 +23,7 @@
 }
 
 .novidade-titulo {
-  font-size: clamp(16px, 5vw, 45px);
+  font-size: clamp(16px, 7vw, 45px);
   color: #d8c27a;
 }
 .novidade-titulo1 {
@@ -145,6 +145,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 55px;
   }
 
   .grupo-whatsapp {
