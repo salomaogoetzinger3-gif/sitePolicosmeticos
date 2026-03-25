@@ -15,8 +15,7 @@
 }
 
 .titulo-categoria-produto {
-  color: #000;
-  margin-bottom: 20px;
+  color: #0000009a;
 }
 
 .produto-texto1 {
@@ -66,12 +65,23 @@ input:focus {
 .categorias-produto {
   display: inline-block;
   margin: 10px 0;
+  list-style: none;
+}
+
+.categorias-produtos-marcas {
+  display: inline-block;
+  margin: 10px 0;
+  list-style: none;
 }
 
 .produto-link.ativo {
   background-color: #8a315c;
-  color: white;
+  color: #ffffff;
   border-radius: 10px;
+  transition: 0.1s ease-in;
+}
+.produto-link.ativo .lista-produto-texto {
+  color: #ffffff;
 }
 
 .item-produto-link {
@@ -81,4 +91,12 @@ input:focus {
   align-items: center;
   display: flex;
   padding: 10px;
+}
+
+/* cards-produtos */
+
+.align-produtos-cards ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
