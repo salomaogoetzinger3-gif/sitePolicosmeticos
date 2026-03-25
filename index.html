@@ -87,18 +87,18 @@
       <div class="mobile-menu">
         <ul>
           <li class="nav-item">
-            <a href="#" class="nav-link1"
-              ><i class="fa-solid fa-bag-shopping"></i>Suas Compras</a
+            <a class="links-nav" href="#" onclick="carregarPagina('home')"
+              >Inicio</a
             >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link1"
-              ><i class="fa-solid fa-book"></i>Sobre nós</a
+            <a class="links-nav" href="#" onclick="carregarPagina('produtos')"
+              >Produtos</a
             >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link1"
-              ><i class="fa-regular fa-circle-user"></i>Conta</a
+            <a class="links-nav" href="#" onclick="carregarPagina('ofertas')"
+              >Ofertas</a
             >
           </li>
         </ul>
@@ -324,7 +324,7 @@
             </h2>
             <ul class="lista-visitados">
               <li class="itens-visitados">
-                <a href="#" class="link-visitados">
+                <a href="#produtos?categoria=perfume" class="link-visitados">
                   <img
                     class="gif"
                     src="./pressets/gifs/perfume.png"
@@ -336,8 +336,9 @@
                   PERFUME
                 </a>
               </li>
+
               <li class="itens-visitados">
-                <a href="#" class="link-visitados">
+                <a href="#produtos?categoria=hidratante" class="link-visitados">
                   <img
                     class="gif"
                     src="./pressets/gifs/creme-e-tubo.png"
@@ -349,8 +350,9 @@
                   HIDRATANTES
                 </a>
               </li>
+
               <li class="itens-visitados">
-                <a href="#" class="link-visitados">
+                <a href="#produtos?categoria=sabonete" class="link-visitados">
                   <img
                     class="gif"
                     src="./pressets/gifs/sabonete.png"
@@ -362,8 +364,9 @@
                   SABONETES
                 </a>
               </li>
+
               <li class="itens-visitados">
-                <a href="#" class="link-visitados">
+                <a href="#produtos?categoria=pedrarias" class="link-visitados">
                   <img
                     class="gif"
                     src="./pressets/gifs/joia.png"
@@ -375,8 +378,9 @@
                   PEDRARIAS
                 </a>
               </li>
+
               <li class="itens-visitados">
-                <a href="#" class="link-visitados">
+                <a href="#produtos?categoria=makeup" class="link-visitados">
                   <img
                     class="gif"
                     src="./pressets/gifs/corar.png"
@@ -388,8 +392,9 @@
                   MAQUIAGEM
                 </a>
               </li>
+
               <li class="itens-visitados">
-                <a href="#" class="link-visitados">
+                <a href="#produtos?categoria=protetor" class="link-visitados">
                   <img
                     class="gif"
                     src="./pressets/gifs/protetor-solar.png"
@@ -401,8 +406,12 @@
                   PROTETOR SOLAR
                 </a>
               </li>
+
               <li class="itens-visitados">
-                <a href="#" class="link-visitados">
+                <a
+                  href="#produtos?categoria=desodorante"
+                  class="link-visitados"
+                >
                   <img
                     class="gif"
                     src="./pressets/gifs/desodorante.png"
@@ -414,8 +423,9 @@
                   DESODORANTE
                 </a>
               </li>
+
               <li class="itens-visitados">
-                <a href="#" class="link-visitados">
+                <a href="#produtos?categoria=canecas" class="link-visitados">
                   <img
                     class="gif"
                     src="./pressets/gifs/xicara-cafe.png"
@@ -485,7 +495,7 @@
         </section>
         <script src="./javascript/scroll.js"></script>
       </section>
-      <section class="home-produtos" id="produtos">
+      <section class="home-produtos" id="produtos" style="display: none">
         <div class="align-texto-produto">
           <p class="produto-texto1">CATÁLOGO</p>
           <h1 class="produtos-titulo1">Nossos <span>Produtos</span></h1>
@@ -502,55 +512,182 @@
             placeholder="Buscar produtos..."
           />
         </div>
-        <div class="lista-categorias-produto">
-          <p class="titulo-categoria-produto">CATÁLOGO</p>
-          <ul class="categorias-produto">
-            <li class="produto-link">
-              <a href="#" class="item-produto-link">
-                <p class="lista-produto-texto">Todos</p>
-              </a>
-            </li>
-            <li class="produto-link">
-              <a href="#" class="item-produto-link">
-                <p class="lista-produto-texto" id="perfumes">Perfumes</p>
-              </a>
-            </li>
-            <li class="produto-link">
-              <a href="#" class="item-produto-link">
-                <p class="lista-produto-texto" id="perfumes">Hidratantes</p>
-              </a>
-            </li>
-            <li class="produto-link">
-              <a href="#" class="item-produto-link">
-                <p class="lista-produto-texto" id="perfumes">Sabonetes</p>
-              </a>
-            </li>
-            <li class="produto-link">
-              <a href="#" class="item-produto-link">
-                <p class="lista-produto-texto" id="perfumes">Maquiagem</p>
-              </a>
-            </li>
-            <li class="produto-link">
-              <a href="#" class="item-produto-link">
-                <p class="lista-produto-texto" id="perfumes">Protetor Solar</p>
-              </a>
-            </li>
-            <li class="produto-link">
-              <a href="#" class="item-produto-link">
-                <p class="lista-produto-texto" id="perfumes">Desodorante</p>
-              </a>
-            </li>
-            <li class="produto-link">
-              <a href="#" class="item-produto-link">
-                <p class="lista-produto-texto" id="perfumes">Presentes</p>
-              </a>
-            </li>
-            <li class="produto-link">
-              <a href="#" class="item-produto-link">
-                <p class="lista-produto-texto" id="perfumes">Chocolates</p>
-              </a>
-            </li>
-          </ul>
+        <div style="display: grid; grid-template-columns: 250px 1fr">
+          <div class="lista-categorias-produto">
+            <p class="titulo-categoria-produto">CATÁLOGO</p>
+            <ul class="categorias-produto">
+              <li class="produto-link todos">
+                <a
+                  href="#produtos?categoria=all"
+                  class="item-produto-link"
+                  id="perfume"
+                >
+                  <p class="lista-produto-texto">Todos</p>
+                </a>
+              </li>
+
+              <li class="produto-link perfumes">
+                <a href="#produtos?categoria=perfume" class="item-produto-link">
+                  <p class="lista-produto-texto">Perfumes</p>
+                </a>
+              </li>
+
+              <li class="produto-link hidratante">
+                <a
+                  href="#produtos?categoria=hidratante"
+                  class="item-produto-link"
+                >
+                  <p class="lista-produto-texto">Hidratantes</p>
+                </a>
+              </li>
+
+              <li class="produto-link sabonete">
+                <a
+                  href="#produtos?categoria=sabonete"
+                  class="item-produto-link"
+                >
+                  <p class="lista-produto-texto">Sabonetes</p>
+                </a>
+              </li>
+
+              <li class="produto-link makeup">
+                <a href="#produtos?categoria=makeup" class="item-produto-link">
+                  <p class="lista-produto-texto">Maquiagem</p>
+                </a>
+              </li>
+
+              <li class="produto-link protetor-solar">
+                <a
+                  href="#produtos?categoria=protetor"
+                  class="item-produto-link"
+                >
+                  <p class="lista-produto-texto">Protetor Solar</p>
+                </a>
+              </li>
+
+              <li class="produto-link desodorante">
+                <a
+                  href="#produtos?categoria=desodorante"
+                  class="item-produto-link"
+                >
+                  <p class="lista-produto-texto">Desodorante</p>
+                </a>
+              </li>
+
+              <li class="produto-link presente">
+                <a
+                  href="#produtos?categoria=presentes"
+                  class="item-produto-link"
+                >
+                  <p class="lista-produto-texto">Presentes</p>
+                </a>
+              </li>
+
+              <li class="produto-link chocolate">
+                <a
+                  href="#produtos?categoria=chocolate"
+                  class="item-produto-link"
+                >
+                  <p class="lista-produto-texto">Chocolates</p>
+                </a>
+              </li>
+            </ul>
+            <p class="titulo-categoria-produto">MARCAS</p>
+            <ul class="categorias-produtos-marcas">
+              <li class="produto-link">
+                <a
+                  href="#"
+                  class="item-produto-link"
+                  onclick="
+                    filtrar('natura');
+                    return false;
+                  "
+                >
+                  <p class="lista-produto-texto">Natura</p>
+                </a>
+              </li>
+
+              <li class="produto-link">
+                <a
+                  href="#"
+                  class="item-produto-link"
+                  onclick="
+                    filtrar('oboticario');
+                    return false;
+                  "
+                >
+                  <p class="lista-produto-texto">OBoticario</p>
+                </a>
+              </li>
+
+              <li class="produto-link">
+                <a
+                  href="#"
+                  class="item-produto-link"
+                  onclick="
+                    filtrar('avon');
+                    return false;
+                  "
+                >
+                  <p class="lista-produto-texto">Avon</p>
+                </a>
+              </li>
+
+              <li class="produto-link">
+                <a
+                  href="#"
+                  class="item-produto-link"
+                  onclick="
+                    filtrar('cacaushow');
+                    return false;
+                  "
+                >
+                  <p class="lista-produto-texto">Cacau Show</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="align-produtos-cards">
+            <ul>
+              <li class="card produto hidratante natura">
+                <a href="#" class="link-presentes">
+                  <div class="img-box">
+                    <img
+                      class="img-card"
+                      src="./pressets/perfume2.webp"
+                      alt="cesta1"
+                    />
+                  </div>
+                  <span class="cards-titulo-categorias">
+                    PRODUTOS NATURA
+                    <h3>Creme Corporal</h3>
+                  </span>
+                  <h4>
+                    Consulte o preço<i class="fa-solid fa-arrow-right"></i>
+                  </h4>
+                </a>
+              </li>
+
+              <li class="card produto perfume oboticario">
+                <a href="#" class="link-presentes">
+                  <div class="img-box">
+                    <img
+                      class="img-card"
+                      src="./pressets/perfume1.avif"
+                      alt="cesta1"
+                    />
+                  </div>
+                  <span class="cards-titulo-categorias">
+                    PRODUTOS OBOTICARIO
+                    <h3>Floratta</h3>
+                  </span>
+                  <h4>
+                    Consulte o preço<i class="fa-solid fa-arrow-right"></i>
+                  </h4>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <script src="./javascript/animar.js"></script>

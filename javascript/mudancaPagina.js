@@ -1,18 +1,18 @@
 function carregarPagina(pagina) {
   const home = document.getElementById('home')
-  const conteudo = document.getElementById('conteudo')
+  const produtos = document.getElementById('produtos')
 
+  // esconde tudo
+  home.style.display = 'none'
+  produtos.style.display = 'none'
+
+  // mostra só o escolhido
   if (pagina === 'home') {
     home.style.display = 'block'
-    conteudo.innerHTML = ''
-    return
   }
 
-  // esconde a home para outras páginas
-  home.style.display = 'none'
-
   if (pagina === 'produtos') {
-    conteudo.innerHTML = ''
+    produtos.style.display = 'block'
   }
 }
 
