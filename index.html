@@ -43,31 +43,24 @@
         <div class="nav-list">
           <ul>
             <li class="nav-item">
-              <a href="#" class="nav-link1"
-                ><i class="fa-solid fa-heart"></i>Favoritos</a
+              <a class="links-nav" href="#" onclick="carregarPagina('home')"
+                >Inicio</a
               >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link1"
-                ><i class="fa-solid fa-bag-shopping"></i>Suas Compras</a
+              <a class="links-nav" href="#" onclick="carregarPagina('produtos')"
+                >Produtos</a
               >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link1"
-                ><i class="fa-solid fa-cart-arrow-down"></i>Carrinho</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link1"
-                ><i class="fa-solid fa-book"></i>Sobre nós</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link1"
-                ><i class="fa-regular fa-circle-user"></i>Conta</a
+              <a class="links-nav" href="#" onclick="carregarPagina('ofertas')"
+                >Ofertas</a
               >
             </li>
           </ul>
+        </div>
+        <div class="nav-carrinho">
+          <a class="links-nav" href="#">Carrinho</a>
         </div>
         <div class="align-icon">
           <div class="nav-icon">
@@ -114,425 +107,451 @@
     </header>
     <script src="./javascript/nav-bar.js"></script>
     <main>
-      <section class="catalogo">
-        <div class="catalogo-container">
-          <div class="tab-buttons">
-            <button class="tab-btn active" content-id="todos">
-              <i class="fa-solid fa-house"></i>
-            </button>
-            <button class="tab-btn" content-id="cabelos">Cosméticos</button>
-            <button class="tab-btn" content-id="rosto">Presentes</button>
-            <button class="tab-btn" content-id="corpo">Chocolates</button>
-          </div>
-          <div class="tab-contents">
-            <div class="content show" id="todos">
-              <section class="hero animar">
-                <video
-                  class="back-video"
-                  autoplay
-                  muted
-                  loop
-                  src="./video_background/video_background.mp4"
-                ></video>
-                <div class="text-hero">
-                  <h2 class="title-hero">Bem-vindo à<br />Poli Cosméticos</h2>
-                  <p class="subtitle-hero">A beleza que você merece</p>
-                  <div class="nav">
-                    <a class="nav-link12" href="#visitados"
-                      >Explore nossos produtos</a
-                    >
-                    <a class="nav-link" href="#novidades">Grupo VIP Whatsapp</a>
-                  </div>
-                </div>
-              </section>
-              <section class="marcas animar">
-                <div class="align-marcas">
-                  <p class="marca-text">MARCAS PARCEIRAS</p>
-                  <ul class="lista-marcas">
-                    <li class="marca-li">
-                      <a href="#" class="link-marca">
-                        <img
-                          src="./pressets/natura.jpeg"
-                          alt="marca-natura"
-                          class="marca-foto"
-                        />
-                      </a>
-                    </li>
-                    <li class="marca-li">
-                      <a href="#" class="link-marca">
-                        <img
-                          src="./pressets/oboticario.jpeg"
-                          alt="marca-oboticario"
-                          class="marca-foto"
-                        />
-                      </a>
-                    </li>
-                    <li class="marca-li">
-                      <a href="#" class="link-marca">
-                        <img
-                          src="./pressets/avon.jpeg"
-                          alt="marca-avon"
-                          class="marca-foto"
-                        />
-                      </a>
-                    </li>
-                    <li class="marca-li">
-                      <a href="#" class="link-marca">
-                        <img
-                          src="./pressets/cacau show.jpeg"
-                          alt="marca-cacau-Show"
-                          class="marca-foto"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </section>
-              <section class="apresentacao animar">
-                <div class="align-apresentacao">
-                  <div class="apresentacao-conteudo">
-                    <h2 class="apresentacao-title">
-                      NOSSA MISSÃO É<br />
-                      <strong>cuidar de você</strong>
-                    </h2>
-                    <p class="apresentacao-texto">
-                      Na Poli Cosméticos, você encontra desde produtos de
-                      skincare e maquiagem até itens para cabelo, perfumes e
-                      cuidados pessoais, todos com a garantia de qualidade da
-                      marca Poli. Nossa equipe está sempre pronta para atendê-lo
-                      da melhor forma possível, garantindo agilidade, eficiência
-                      e, principalmente, sua satisfação.
-                    </p>
-                    <ul class="apresentacao-destaque">
-                      <li class="apresentacao-itens">
-                        <i class="fa-regular fa-heart"></i>
-                        <p class="apresentacao-texto1">Qualidade</p>
-                      </li>
-                      <li class="apresentacao-itens">
-                        <span class="material-symbols-outlined"> shield </span>
-                        <p class="apresentacao-texto1">Garantia</p>
-                      </li>
-                      <li class="apresentacao-itens">
-                        <i class="fa-regular fa-handshake"></i>
-                        <p class="apresentacao-texto1">Confiança</p>
-                      </li>
-                      <li class="apresentacao-itens">
-                        <i class="fa-solid fa-angles-right"></i>
-                        <p class="apresentacao-texto1">Eficiência</p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="slider">
-                    <div class="slides">
-                      <!--Radio Buttons-->
-                      <input type="radio" name="radio-btn" id="radio1" />
-                      <input type="radio" name="radio-btn" id="radio2" />
-                      <input type="radio" name="radio-btn" id="radio3" />
-                      <input type="radio" name="radio-btn" id="radio4" />
-                      <!--Slides Img-->
-                      <div class="slide primeiro">
-                        <img
-                          src="./pressets/carrossel/01.jpeg"
-                          alt="Imagem natura"
-                        />
-                        <img
-                          src="./pressets/carrossel/02.jpeg"
-                          alt="Imagem natura"
-                        />
-                        <img
-                          src="./pressets/carrossel/03.jpeg"
-                          alt="Imagem natura"
-                        />
-                        <img
-                          src="./pressets/carrossel/04.jpeg"
-                          alt="Imagem natura"
-                        />
-                      </div>
-                      <!--navegation auto-->
-                      <div class="navegation-auto">
-                        <div class="auto-btn" id="autoBtn1"></div>
-                        <div class="auto-btn" id="autoBtn2"></div>
-                        <div class="auto-btn" id="autoBtn3"></div>
-                        <div class="auto-btn" id="autoBtn4"></div>
-                      </div>
-                    </div>
-                    <div class="manual-navegation">
-                      <label for="radio1" class="manual-btn"></label>
-                      <label for="radio2" class="manual-btn"></label>
-                      <label for="radio3" class="manual-btn"></label>
-                      <label for="radio4" class="manual-btn"></label>
-                    </div>
-                    <script src="./javascript/carrosel.js"></script>
-                  </div>
-                </div>
-              </section>
-              <section class="presentes animar">
-                <p class="visitados-texto">DESTAQUE</p>
-                <h2 class="title-categorias">
-                  OFERTAS <strong>DESSE MÊS</strong>
-                </h2>
-                <div class="cards-categorias">
-                  <ul class="align-cards">
-                    <li class="card" id="presentes">
-                      <a href="#" class="link-presentes">
-                        <div class="img-box">
-                          <img
-                            class="img-card"
-                            src="./pressets/cards/01.jpeg"
-                            alt="cesta1"
-                          />
-                        </div>
-                        <span class="cards-titulo-categorias"
-                          >PRODUTOS NATURA
-                          <h3>Cesta presente</h3></span
-                        >
-                        <h4>
-                          Consulte o preço<i
-                            class="fa-solid fa-arrow-right"
-                          ></i>
-                        </h4>
-                      </a>
-                    </li>
-                    <li class="card">
-                      <a href="#" class="link-presentes">
-                        <div class="img-box">
-                          <img
-                            class="img-card"
-                            src="./pressets/cards/02.jpeg"
-                            alt="cesta1"
-                          />
-                        </div>
-                        <span class="cards-titulo-categorias"
-                          >PRODUTOS NATURA
-                          <h3>Cesta presente</h3></span
-                        >
-                        <h4>
-                          Consulte o preço<i
-                            class="fa-solid fa-arrow-right"
-                          ></i>
-                        </h4>
-                      </a>
-                    </li>
-                    <li class="card">
-                      <a href="#" class="link-presentes">
-                        <div class="img-box">
-                          <img
-                            class="img-card"
-                            src="./pressets/cards/03.jpeg"
-                            alt="cesta1"
-                          />
-                        </div>
-                        <span class="cards-titulo-categorias"
-                          >PRODUTOS BOTICARIO
-                          <h3>Cesta presente</h3></span
-                        >
-                        <h4>
-                          Consulte o preço<i
-                            class="fa-solid fa-arrow-right"
-                          ></i>
-                        </h4>
-                      </a>
-                    </li>
-                    <li class="card">
-                      <a href="#" class="link-presentes">
-                        <div class="img-box">
-                          <img
-                            class="img-card"
-                            src="./pressets/cards/07.jpeg"
-                            alt="cesta1"
-                          />
-                        </div>
-                        <span class="cards-titulo-categorias"
-                          >PRODUTOS CACAU SHOW
-                          <h3>Cesta presente</h3></span
-                        >
-                        <h4>
-                          Consulte o preço<i
-                            class="fa-solid fa-arrow-right"
-                          ></i>
-                        </h4>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </section>
-              <section class="visitados animar" id="visitados">
-                <div class="align-visitados">
-                  <p class="visitados-texto">CATEGORIAS</p>
-                  <h2 class="visitados-titulo">
-                    EXPLORE NOSSOS <strong>PRODUTOS</strong>
-                  </h2>
-                  <ul class="lista-visitados">
-                    <li class="itens-visitados">
-                      <a href="#" class="link-visitados">
-                        <img
-                          class="gif"
-                          src="./pressets/gifs/perfume.png"
-                          data-png="./pressets/gifs/perfume.png"
-                          data-gif="./pressets/gifs/perfume.gif"
-                          alt="gif-perfume"
-                          id="imagem"
-                        />
-                        PERFUME
-                      </a>
-                    </li>
-                    <li class="itens-visitados">
-                      <a href="#" class="link-visitados">
-                        <img
-                          class="gif"
-                          src="./pressets/gifs/creme-e-tubo.png"
-                          data-png="./pressets/gifs/creme-e-tubo.png"
-                          data-gif="./pressets/gifs/creme-e-tubo.gif"
-                          alt="gif-creme"
-                          id="imagem"
-                        />
-                        HIDRATANTES
-                      </a>
-                    </li>
-                    <li class="itens-visitados">
-                      <a href="#" class="link-visitados">
-                        <img
-                          class="gif"
-                          src="./pressets/gifs/sabonete.png"
-                          data-png="./pressets/gifs/sabonete.png"
-                          data-gif="./pressets/gifs/sabonete.gif"
-                          alt="gif-sabonete"
-                          id="imagem"
-                        />
-                        SABONETES
-                      </a>
-                    </li>
-                    <li class="itens-visitados">
-                      <a href="#" class="link-visitados">
-                        <img
-                          class="gif"
-                          src="./pressets/gifs/joia.png"
-                          data-png="./pressets/gifs/joia.png"
-                          data-gif="./pressets/gifs/joia.gif"
-                          alt="gif-joias"
-                          id="joias"
-                        />
-                        PEDRARIAS
-                      </a>
-                    </li>
-                    <li class="itens-visitados">
-                      <a href="#" class="link-visitados">
-                        <img
-                          class="gif"
-                          src="./pressets/gifs/corar.png"
-                          data-png="./pressets/gifs/corar.png"
-                          data-gif="./pressets/gifs/corar.gif"
-                          alt="gif-corar"
-                          id="imagem"
-                        />
-                        MAQUIAGEM
-                      </a>
-                    </li>
-                    <li class="itens-visitados">
-                      <a href="#" class="link-visitados">
-                        <img
-                          class="gif"
-                          src="./pressets/gifs/protetor-solar.png"
-                          data-png="./pressets/gifs/protetor-solar.png"
-                          data-gif="./pressets/gifs/protetor-solar.gif"
-                          alt="gif-protetor-solar"
-                          id="imagem"
-                        />
-                        PROTETOR SOLAR
-                      </a>
-                    </li>
-                    <li class="itens-visitados">
-                      <a href="#" class="link-visitados">
-                        <img
-                          class="gif"
-                          src="./pressets/gifs/desodorante.png"
-                          data-png="./pressets/gifs/desodorante.png"
-                          data-gif="./pressets/gifs/desodorante.gif"
-                          alt="gif-desodorante"
-                          id="imagem"
-                        />
-                        DESODORANTE
-                      </a>
-                    </li>
-                    <li class="itens-visitados">
-                      <a href="#" class="link-visitados">
-                        <img
-                          class="gif"
-                          src="./pressets/gifs/xicara-cafe.png"
-                          data-png="./pressets/gifs/xicara-cafe.png"
-                          data-gif="./pressets/gifs/xicara-de-cafe.gif"
-                          alt="gif-xicara"
-                          id="imagem"
-                        />
-                        CANÉCAS
-                      </a>
-                    </li>
-                  </ul>
-                  <script src="./javascript/gifs.js"></script>
-                </div>
-              </section>
-              <section class="novidades animar" id="novidades">
-                <div class="circulo c1"></div>
-                <div class="circulo c2"></div>
-                <div class="align-novidades">
-                  <div class="grupo-whatsapp">
-                    <h3 class="novidade-exclusivo">
-                      <i class="fa-regular fa-star"></i>exclusivo para membros
-                    </h3>
-                    <h1 class="novidade-titulo">
-                      Acesse nosso <strong>Grupo VIP</strong>
-                    </h1>
-                    <p class="novidade-texto">
-                      Descubra os lancamentos da Poli Cosmeticos e realce sua
-                      beleza com produtos de qualidade e preços imperdíveis.
-                      Aproveite agora
-                    </p>
-                    <button class="btn-novidades">
-                      <a
-                        href="https://chat.whatsapp.com/FpvUWKMFgAsIKQoPADtpxU?mode=gi_t"
-                        class="btn-link"
-                        target="_blank"
-                      >
-                        <i class="fa-brands fa-whatsapp"></i>Acesse nosso grupo
-                        VIP
-                      </a>
-                    </button>
-                  </div>
-                  <div class="redes-sociais">
-                    <h1 class="novidade-titulo1">
-                      Acesse nosso <strong>Perfil</strong>
-                    </h1>
-                    <div class="circle-foto c3">
-                      <img
-                        src="./pressets/carrossel/01.jpeg"
-                        alt="perfil-poli"
-                        class="foto-rede-social"
-                      />
-                    </div>
-                    <div class="redes-sociais-texto">
-                      <p>@policosmeticosfoz</p>
-                      <p>Poli Cosméticos| Poliana M R Kroetz</p>
-                    </div>
-                    <button class="btn-novidades">
-                      <a
-                        href="https://www.instagram.com/policosmeticosfoz?igsh=MW04cjN2bHFndXQ3bA=="
-                        class="btn-link"
-                        target="_blank"
-                      >
-                        <i class="fa-brands fa-instagram"></i>Instagram</a
-                      >
-                    </button>
-                  </div>
-                </div>
-              </section>
-              <script src="./javascript/scroll.js"></script>
+      <section class="catalogo" id="home">
+        <section class="hero animar">
+          <video
+            class="back-video"
+            autoplay
+            muted
+            loop
+            src="./video_background/video_background.mp4"
+          ></video>
+          <div class="text-hero">
+            <h2 class="title-hero">Bem-vindo à<br />Poli Cosméticos</h2>
+            <p class="subtitle-hero">A beleza que você merece</p>
+            <div class="nav">
+              <a class="nav-link12" href="#visitados"
+                >Explore nossos produtos</a
+              >
+              <a class="nav-link" href="#novidades">Grupo VIP Whatsapp</a>
             </div>
-            <div class="content" id="cabelos"></div>
-            <div class="content" id="rosto"></div>
-            <div class="content" id="corpo"></div>
           </div>
+        </section>
+        <section class="marcas animar">
+          <div class="align-marcas">
+            <p class="marca-text">MARCAS PARCEIRAS</p>
+            <ul class="lista-marcas">
+              <li class="marca-li">
+                <a href="#" class="link-marca">
+                  <img
+                    src="./pressets/natura.jpeg"
+                    alt="marca-natura"
+                    class="marca-foto"
+                  />
+                </a>
+              </li>
+              <li class="marca-li">
+                <a href="#" class="link-marca">
+                  <img
+                    src="./pressets/oboticario.jpeg"
+                    alt="marca-oboticario"
+                    class="marca-foto"
+                  />
+                </a>
+              </li>
+              <li class="marca-li">
+                <a href="#" class="link-marca">
+                  <img
+                    src="./pressets/avon.jpeg"
+                    alt="marca-avon"
+                    class="marca-foto"
+                  />
+                </a>
+              </li>
+              <li class="marca-li">
+                <a href="#" class="link-marca">
+                  <img
+                    src="./pressets/cacau show.jpeg"
+                    alt="marca-cacau-Show"
+                    class="marca-foto"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="apresentacao animar">
+          <div class="align-apresentacao">
+            <div class="apresentacao-conteudo">
+              <h2 class="apresentacao-title">
+                NOSSA MISSÃO É<br />
+                <strong>cuidar de você</strong>
+              </h2>
+              <p class="apresentacao-texto">
+                Na Poli Cosméticos, você encontra desde produtos de skincare e
+                maquiagem até itens para cabelo, perfumes e cuidados pessoais,
+                todos com a garantia de qualidade da marca Poli. Nossa equipe
+                está sempre pronta para atendê-lo da melhor forma possível,
+                garantindo agilidade, eficiência e, principalmente, sua
+                satisfação.
+              </p>
+              <ul class="apresentacao-destaque">
+                <li class="apresentacao-itens">
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="apresentacao-texto1">Qualidade</p>
+                </li>
+                <li class="apresentacao-itens">
+                  <span class="material-symbols-outlined"> shield </span>
+                  <p class="apresentacao-texto1">Garantia</p>
+                </li>
+                <li class="apresentacao-itens">
+                  <i class="fa-regular fa-handshake"></i>
+                  <p class="apresentacao-texto1">Confiança</p>
+                </li>
+                <li class="apresentacao-itens">
+                  <i class="fa-solid fa-angles-right"></i>
+                  <p class="apresentacao-texto1">Eficiência</p>
+                </li>
+              </ul>
+            </div>
+            <div class="slider">
+              <div class="slides">
+                <!--Radio Buttons-->
+                <input type="radio" name="radio-btn" id="radio1" />
+                <input type="radio" name="radio-btn" id="radio2" />
+                <input type="radio" name="radio-btn" id="radio3" />
+                <input type="radio" name="radio-btn" id="radio4" />
+                <!--Slides Img-->
+                <div class="slide primeiro">
+                  <img src="./pressets/carrossel/01.jpeg" alt="Imagem natura" />
+                  <img src="./pressets/carrossel/02.jpeg" alt="Imagem natura" />
+                  <img src="./pressets/carrossel/03.jpeg" alt="Imagem natura" />
+                  <img src="./pressets/carrossel/04.jpeg" alt="Imagem natura" />
+                </div>
+                <!--navegation auto-->
+                <div class="navegation-auto">
+                  <div class="auto-btn" id="autoBtn1"></div>
+                  <div class="auto-btn" id="autoBtn2"></div>
+                  <div class="auto-btn" id="autoBtn3"></div>
+                  <div class="auto-btn" id="autoBtn4"></div>
+                </div>
+              </div>
+              <div class="manual-navegation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+              </div>
+              <script src="./javascript/carrosel.js"></script>
+            </div>
+          </div>
+        </section>
+        <section class="presentes animar">
+          <p class="visitados-texto">DESTAQUE</p>
+          <h2 class="title-categorias">OFERTAS <strong>DESSE MÊS</strong></h2>
+          <div class="cards-categorias">
+            <ul class="align-cards">
+              <li class="card" id="presentes">
+                <a href="#" class="link-presentes">
+                  <div class="img-box">
+                    <img
+                      class="img-card"
+                      src="./pressets/cards/01.jpeg"
+                      alt="cesta1"
+                    />
+                  </div>
+                  <span class="cards-titulo-categorias"
+                    >PRODUTOS NATURA
+                    <h3>Cesta presente</h3></span
+                  >
+                  <h4>
+                    Consulte o preço<i class="fa-solid fa-arrow-right"></i>
+                  </h4>
+                </a>
+              </li>
+              <li class="card">
+                <a href="#" class="link-presentes">
+                  <div class="img-box">
+                    <img
+                      class="img-card"
+                      src="./pressets/cards/02.jpeg"
+                      alt="cesta1"
+                    />
+                  </div>
+                  <span class="cards-titulo-categorias"
+                    >PRODUTOS NATURA
+                    <h3>Cesta presente</h3></span
+                  >
+                  <h4>
+                    Consulte o preço<i class="fa-solid fa-arrow-right"></i>
+                  </h4>
+                </a>
+              </li>
+              <li class="card">
+                <a href="#" class="link-presentes">
+                  <div class="img-box">
+                    <img
+                      class="img-card"
+                      src="./pressets/cards/03.jpeg"
+                      alt="cesta1"
+                    />
+                  </div>
+                  <span class="cards-titulo-categorias"
+                    >PRODUTOS BOTICARIO
+                    <h3>Cesta presente</h3></span
+                  >
+                  <h4>
+                    Consulte o preço<i class="fa-solid fa-arrow-right"></i>
+                  </h4>
+                </a>
+              </li>
+              <li class="card">
+                <a href="#" class="link-presentes">
+                  <div class="img-box">
+                    <img
+                      class="img-card"
+                      src="./pressets/cards/07.jpeg"
+                      alt="cesta1"
+                    />
+                  </div>
+                  <span class="cards-titulo-categorias"
+                    >PRODUTOS CACAU SHOW
+                    <h3>Cesta presente</h3></span
+                  >
+                  <h4>
+                    Consulte o preço<i class="fa-solid fa-arrow-right"></i>
+                  </h4>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="visitados animar" id="visitados">
+          <div class="align-visitados">
+            <p class="visitados-texto">CATEGORIAS</p>
+            <h2 class="visitados-titulo">
+              EXPLORE NOSSOS <strong>PRODUTOS</strong>
+            </h2>
+            <ul class="lista-visitados">
+              <li class="itens-visitados">
+                <a href="#" class="link-visitados">
+                  <img
+                    class="gif"
+                    src="./pressets/gifs/perfume.png"
+                    data-png="./pressets/gifs/perfume.png"
+                    data-gif="./pressets/gifs/perfume.gif"
+                    alt="gif-perfume"
+                    id="imagem"
+                  />
+                  PERFUME
+                </a>
+              </li>
+              <li class="itens-visitados">
+                <a href="#" class="link-visitados">
+                  <img
+                    class="gif"
+                    src="./pressets/gifs/creme-e-tubo.png"
+                    data-png="./pressets/gifs/creme-e-tubo.png"
+                    data-gif="./pressets/gifs/creme-e-tubo.gif"
+                    alt="gif-creme"
+                    id="imagem"
+                  />
+                  HIDRATANTES
+                </a>
+              </li>
+              <li class="itens-visitados">
+                <a href="#" class="link-visitados">
+                  <img
+                    class="gif"
+                    src="./pressets/gifs/sabonete.png"
+                    data-png="./pressets/gifs/sabonete.png"
+                    data-gif="./pressets/gifs/sabonete.gif"
+                    alt="gif-sabonete"
+                    id="imagem"
+                  />
+                  SABONETES
+                </a>
+              </li>
+              <li class="itens-visitados">
+                <a href="#" class="link-visitados">
+                  <img
+                    class="gif"
+                    src="./pressets/gifs/joia.png"
+                    data-png="./pressets/gifs/joia.png"
+                    data-gif="./pressets/gifs/joia.gif"
+                    alt="gif-joias"
+                    id="joias"
+                  />
+                  PEDRARIAS
+                </a>
+              </li>
+              <li class="itens-visitados">
+                <a href="#" class="link-visitados">
+                  <img
+                    class="gif"
+                    src="./pressets/gifs/corar.png"
+                    data-png="./pressets/gifs/corar.png"
+                    data-gif="./pressets/gifs/corar.gif"
+                    alt="gif-corar"
+                    id="imagem"
+                  />
+                  MAQUIAGEM
+                </a>
+              </li>
+              <li class="itens-visitados">
+                <a href="#" class="link-visitados">
+                  <img
+                    class="gif"
+                    src="./pressets/gifs/protetor-solar.png"
+                    data-png="./pressets/gifs/protetor-solar.png"
+                    data-gif="./pressets/gifs/protetor-solar.gif"
+                    alt="gif-protetor-solar"
+                    id="imagem"
+                  />
+                  PROTETOR SOLAR
+                </a>
+              </li>
+              <li class="itens-visitados">
+                <a href="#" class="link-visitados">
+                  <img
+                    class="gif"
+                    src="./pressets/gifs/desodorante.png"
+                    data-png="./pressets/gifs/desodorante.png"
+                    data-gif="./pressets/gifs/desodorante.gif"
+                    alt="gif-desodorante"
+                    id="imagem"
+                  />
+                  DESODORANTE
+                </a>
+              </li>
+              <li class="itens-visitados">
+                <a href="#" class="link-visitados">
+                  <img
+                    class="gif"
+                    src="./pressets/gifs/xicara-cafe.png"
+                    data-png="./pressets/gifs/xicara-cafe.png"
+                    data-gif="./pressets/gifs/xicara-de-cafe.gif"
+                    alt="gif-xicara"
+                    id="imagem"
+                  />
+                  CANÉCAS
+                </a>
+              </li>
+            </ul>
+            <script src="./javascript/gifs.js"></script>
+          </div>
+        </section>
+        <section class="novidades animar" id="novidades">
+          <div class="circulo c1"></div>
+          <div class="circulo c2"></div>
+          <div class="align-novidades">
+            <div class="grupo-whatsapp">
+              <h3 class="novidade-exclusivo">
+                <i class="fa-regular fa-star"></i>exclusivo para membros
+              </h3>
+              <h1 class="novidade-titulo">
+                Acesse nosso <strong>Grupo VIP</strong>
+              </h1>
+              <p class="novidade-texto">
+                Descubra os lancamentos da Poli Cosmeticos e realce sua beleza
+                com produtos de qualidade e preços imperdíveis. Aproveite agora
+              </p>
+              <button class="btn-novidades">
+                <a
+                  href="https://chat.whatsapp.com/FpvUWKMFgAsIKQoPADtpxU?mode=gi_t"
+                  class="btn-link"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>Acesse nosso grupo VIP
+                </a>
+              </button>
+            </div>
+            <div class="redes-sociais">
+              <h1 class="novidade-titulo1">
+                Acesse nosso <strong>Perfil</strong>
+              </h1>
+              <div class="circle-foto c3">
+                <img
+                  src="./pressets/carrossel/01.jpeg"
+                  alt="perfil-poli"
+                  class="foto-rede-social"
+                />
+              </div>
+              <div class="redes-sociais-texto">
+                <p>@policosmeticosfoz</p>
+                <p>Poli Cosméticos| Poliana M R Kroetz</p>
+              </div>
+              <button class="btn-novidades">
+                <a
+                  href="https://www.instagram.com/policosmeticosfoz?igsh=MW04cjN2bHFndXQ3bA=="
+                  class="btn-link"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i>Instagram</a
+                >
+              </button>
+            </div>
+          </div>
+        </section>
+        <script src="./javascript/scroll.js"></script>
+      </section>
+      <section class="home-produtos" id="produtos">
+        <div class="align-texto-produto">
+          <p class="produto-texto1">CATÁLOGO</p>
+          <h1 class="produtos-titulo1">Nossos <span>Produtos</span></h1>
+          <p class="produto-texto2">
+            Encontre os melhores cosméticos, presentes e chocolates para você ou
+            para presentear.
+          </p>
         </div>
-        <script src="./javascript/tabs.js"></script>
+        <div class="align-pesquisa-produtos">
+          <img src="./pressets/search.svg" alt="pesquisa" />
+          <input
+            class="pesquisa-produtos"
+            type="search"
+            placeholder="Buscar produtos..."
+          />
+        </div>
+        <div class="lista-categorias-produto">
+          <p class="titulo-categoria-produto">CATÁLOGO</p>
+          <ul class="categorias-produto">
+            <li class="produto-link">
+              <a href="#" class="item-produto-link">
+                <p class="lista-produto-texto">Todos</p>
+              </a>
+            </li>
+            <li class="produto-link">
+              <a href="#" class="item-produto-link">
+                <p class="lista-produto-texto" id="perfumes">Perfumes</p>
+              </a>
+            </li>
+            <li class="produto-link">
+              <a href="#" class="item-produto-link">
+                <p class="lista-produto-texto" id="perfumes">Hidratantes</p>
+              </a>
+            </li>
+            <li class="produto-link">
+              <a href="#" class="item-produto-link">
+                <p class="lista-produto-texto" id="perfumes">Sabonetes</p>
+              </a>
+            </li>
+            <li class="produto-link">
+              <a href="#" class="item-produto-link">
+                <p class="lista-produto-texto" id="perfumes">Maquiagem</p>
+              </a>
+            </li>
+            <li class="produto-link">
+              <a href="#" class="item-produto-link">
+                <p class="lista-produto-texto" id="perfumes">Protetor Solar</p>
+              </a>
+            </li>
+            <li class="produto-link">
+              <a href="#" class="item-produto-link">
+                <p class="lista-produto-texto" id="perfumes">Desodorante</p>
+              </a>
+            </li>
+            <li class="produto-link">
+              <a href="#" class="item-produto-link">
+                <p class="lista-produto-texto" id="perfumes">Presentes</p>
+              </a>
+            </li>
+            <li class="produto-link">
+              <a href="#" class="item-produto-link">
+                <p class="lista-produto-texto" id="perfumes">Chocolates</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <script src="./javascript/animar.js"></script>
     </main>
@@ -587,5 +606,6 @@
       <p>© 2026 Poli Cosméticos. Todos os direitos reservados.</p>
       <p>Feito com amor por Poli Cosméticos</p>
     </div>
+    <script src="./javascript/mudancaPagina.js"></script>
   </body>
 </html>
