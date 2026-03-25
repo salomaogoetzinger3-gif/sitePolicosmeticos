@@ -126,6 +126,7 @@
   align-items: center;
   gap: 10vh;
   height: 250px;
+  list-style: none;
 }
 
 .marca-foto {

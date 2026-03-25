@@ -35,6 +35,11 @@
   margin: 0 15px;
 }
 
+.links-nav {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .nav-link1 {
   text-decoration: none;
   color: #d8c27a;
