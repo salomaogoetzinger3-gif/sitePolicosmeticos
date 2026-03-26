@@ -7,6 +7,7 @@
     <link rel="icon" href="./pressets/poli_logo_favico.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/filtro-mobile.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@1,5..1200,300..900&display=swap"
       rel="stylesheet"
@@ -512,33 +513,8 @@
             placeholder="Buscar produtos..."
           />
         </div>
-        <div class="mobile-filtro">
-          <button class="btn-filter" onclick="openFilter()">Filtros</button>
-
-          <div class="overlay" id="overlay" onclick="closeFilter()"></div>
-
-          <div class="filter-sheet" id="filterSheet">
-            <div class="header">
-              <h2>Filtros</h2>
-              <span onclick="closeFilter()">✕</span>
-            </div>
-
-            <h4>CATEGORIA</h4>
-
-            <div class="tags">
-              <button class="active">Todos</button>
-              <button>Perfumes</button>
-              <button>Hidratantes</button>
-              <button>Sabonetes</button>
-              <button>Maquiagem</button>
-              <button>Protetor Solar</button>
-              <button>Desodorante</button>
-              <button>Presentes</button>
-            </div>
-          </div>
-          <script src="/javascript/filtro.js"></script>
-        </div>
-        <div id="align-produto">
+        <div class="align-filtro-produtos"></div>
+        <div class="layout-produtos">
           <div class="lista-categorias-produto">
             <p class="titulo-categoria-produto">CATEGORIAS</p>
             <ul class="categorias-produto">
