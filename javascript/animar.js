@@ -27,3 +27,29 @@ function filtrar(categoria) {
   });
 }
 
+// 👇 ADICIONA ISSO
+function pegarCategoriaDaURL() {
+  const hash = window.location.hash;
+
+  if (hash.includes('categoria=')) {
+    const categoria = hash.split('categoria=')[1];
+    filtrar(categoria);
+  } else {
+    filtrar('all');
+  }
+}
+
+// 👇 ADICIONA ISSO
+window.addEventListener('load', pegarCategoriaDaURL);
+window.addEventListener('hashchange', pegarCategoriaDaURL);
+
+function openFilter() {
+  document.getElementById("filterSheet").classList.add("active");
+  document.getElementById("overlay").classList.add("active");
+}
+
+function closeFilter() {
+  document.getElementById("filterSheet").classList.remove("active");
+  document.getElementById("overlay").classList.remove("active");
+}
+

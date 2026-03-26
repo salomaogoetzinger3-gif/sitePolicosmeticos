@@ -497,7 +497,7 @@
       </section>
       <section class="home-produtos" id="produtos" style="display: none">
         <div class="align-texto-produto">
-          <p class="produto-texto1">CATÁLOGO</p>
+          <p class="produto-texto1" style="color: #0000009a">CATÁLOGO</p>
           <h1 class="produtos-titulo1">Nossos <span>Produtos</span></h1>
           <p class="produto-texto2">
             Encontre os melhores cosméticos, presentes e chocolates para você ou
@@ -512,9 +512,35 @@
             placeholder="Buscar produtos..."
           />
         </div>
+        <div class="mobile-filtro">
+          <button class="btn-filter" onclick="openFilter()">Filtros</button>
+
+          <div class="overlay" id="overlay" onclick="closeFilter()"></div>
+
+          <div class="filter-sheet" id="filterSheet">
+            <div class="header">
+              <h2>Filtros</h2>
+              <span onclick="closeFilter()">✕</span>
+            </div>
+
+            <h4>CATEGORIA</h4>
+
+            <div class="tags">
+              <button class="active">Todos</button>
+              <button>Perfumes</button>
+              <button>Hidratantes</button>
+              <button>Sabonetes</button>
+              <button>Maquiagem</button>
+              <button>Protetor Solar</button>
+              <button>Desodorante</button>
+              <button>Presentes</button>
+            </div>
+          </div>
+          <script src="/javascript/filtro.js"></script>
+        </div>
         <div id="align-produto">
           <div class="lista-categorias-produto">
-            <p class="titulo-categoria-produto">CATÁLOGO</p>
+            <p class="titulo-categoria-produto">CATEGORIAS</p>
             <ul class="categorias-produto">
               <li class="produto-link todos">
                 <a
@@ -711,7 +737,7 @@
     <footer class="footer">
       <div class="apresentacao-footer">
         <img
-          src="./pressets/poli_logo.png"
+          src="/pressets/poli_logo.png"
           alt="logo-poli"
           class="apresentacao-footer-img"
         />
