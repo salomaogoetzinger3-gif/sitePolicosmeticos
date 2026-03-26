@@ -43,5 +43,13 @@ function pegarCategoriaDaURL() {
 window.addEventListener('load', pegarCategoriaDaURL);
 window.addEventListener('hashchange', pegarCategoriaDaURL);
 
+function openFilter() {
+  document.getElementById("filterSheet").classList.add("active");
+  document.getElementById("overlay").classList.add("active");
+}
 
+function closeFilter() {
+  document.getElementById("filterSheet").classList.remove("active");
+  document.getElementById("overlay").classList.remove("active");
+}
 
