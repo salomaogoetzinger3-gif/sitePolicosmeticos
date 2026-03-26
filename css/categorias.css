@@ -30,7 +30,6 @@
   height: auto;
   background-color: #f5f5f5;
   width: 100%;
-  aspect-ratio: 1 / 1;
   object-fit: cover;
   transition: 1s;
 }
@@ -122,7 +121,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .img-card {
     height: auto;
     background-color: #ffd2e7;

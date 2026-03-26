@@ -118,7 +118,7 @@
   padding: 12px 30px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .nav-item {
     display: none;
   }

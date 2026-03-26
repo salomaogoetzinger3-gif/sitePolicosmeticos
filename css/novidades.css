@@ -156,7 +156,7 @@
   padding: 3px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .align-novidades {
     flex-direction: column;
     align-items: center;
