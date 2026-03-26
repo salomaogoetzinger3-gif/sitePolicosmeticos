@@ -84,7 +84,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .lista-visitados {
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 250px));

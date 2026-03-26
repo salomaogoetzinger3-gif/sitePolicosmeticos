@@ -79,7 +79,7 @@
   font-family: "poppins", sans-serif;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .footer {
     display: flex;
     justify-content: center;

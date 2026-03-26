@@ -127,6 +127,7 @@
   gap: 10vh;
   height: 250px;
   list-style: none;
+  overflow: hidden;
 }
 
 .marca-foto {
@@ -168,7 +169,7 @@
   letter-spacing: 1.5px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .slider {
     width: 100%;
   }
