@@ -88,4 +88,9 @@ document.querySelectorAll('.link-visitados').forEach(link => {
 })
 
 window.addEventListener('hashchange', handleHash)
-window.addEventListener('load', handleHash)
+
+window.addEventListener('load', function () {
+  // Sempre começa na home ao recarregar
+  history.replaceState(null, '', window.location.pathname)
+  carregarPagina('home')
+})
