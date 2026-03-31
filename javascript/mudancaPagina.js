@@ -119,11 +119,11 @@ const _categorias = [
   { label: 'Perfumes',      valor: 'perfume' },
   { label: 'Hidratantes',   valor: 'hidratante' },
   { label: 'Sabonetes',     valor: 'sabonete' },
+  { label: 'Pedrarias',     valor: 'pedrarias' },
   { label: 'Maquiagem',     valor: 'makeup' },
-  { label: 'Protetor Solar',valor: 'protetor' },
-  { label: 'Desodorante',   valor: 'desodorante' },
-  { label: 'Presentes',     valor: 'presentes' },
-  { label: 'Chocolates',    valor: 'chocolate' },
+  { label: 'protetor solar',valor: 'protetor' },
+  { label: 'Desodorantes',  valor: 'desodorante' },
+  { label: 'Canécas',       valor: 'canecas' },
 ]
 
 const _marcas = [
