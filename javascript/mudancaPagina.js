@@ -61,6 +61,15 @@ function filtrar(classe) {
   if (badge) badge.style.display = classe === "all" ? "none" : "inline-block";
 }
 
+function irParaMarca(marca) {
+  carregarPagina("produtos");
+  const todos = document.querySelectorAll(".align-produtos-cards .card");
+  todos.forEach((card) => {
+    card.style.display = card.classList.contains(marca) ? "block" : "none";
+  });
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
 // ─── Leitura do hash da URL ────────────────────────────────────────────────
 function handleHash() {
   const hash = window.location.hash;
